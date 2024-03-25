@@ -10,3 +10,8 @@ CSS(Cascading Style Sheet)
 <a href="https://developer.mozilla.org/ko/docs/Learn/Getting_started_with_the_web/CSS_basics" target="_blank"> <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=CSS3&logoColor=FFFFFF"/> </a>
 
 <a href="https://sass-lang.com/" target="_blank"> <img src="https://img.shields.io/badge/sass-CC6699?style=for-the-badge&logo=Sass&logoColor=FFFFFF"/> </a>
+
+---
+
+### DOM
+![image](https://github.com/Gnyo/React/assets/102850495/d29600ed-e2e9-4cbd-ac52-17b14d2ae39c)
