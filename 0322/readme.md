@@ -66,5 +66,6 @@ DOM은 자바스크립트를 이용하여 코드를 DOM tree로 변경 가능</b
 - index.js에 대응되는 HTML 템플릿 파일
 - 렌더링된 결과 표시(index.html 이름 변경 시 오류 발생)
 ![image](https://github.com/Gnyo/React/assets/102850495/c1bf8adf-ba24-458a-986b-6e81740d6d39)
-![image](https://github.com/Gnyo/React/assets/102850495/bb902310-56ff-4f55-8ecc-783f0bae7bb5)
+![image](https://github.com/Gnyo/React/assets/102850495/6278ab97-9066-4d2e-ac7e-2a21b7b79d31)
+
 
