@@ -60,6 +60,8 @@
 FE와 BE가 확실히 구분되어 백엔드 부분에 걱정할 필요가 없음(개발 순서로 디자인→서버가 가능)
 - 단점:</br>
 최초 로딩 시 한번에 받아와 초기 ㅔ이지 로딩시간이 긺
+![image](https://github.com/Gnyo/React/assets/102850495/1fe7278b-8692-499c-8a69-a4a9a2778b6c)
+
 
 ### MPA(Multi Page Application)
 - 여러 개(Multiple)의 Page로 구성된 Application(여러 개의 DOM)
@@ -71,3 +73,14 @@ FE와 BE가 확실히 구분되어 백엔드 부분에 걱정할 필요가 없�
 서버에서 미리 렌더링을 하고 가져와 첫 로딩이 매우 짧음
 - 단점:</br>
 새로운 페이지를 이동하면 '깜빡'임(UX)
+![image](https://github.com/Gnyo/React/assets/102850495/ae861cd2-5280-4a22-b0f6-3d8600eb4967)
+
+---
+
+### Client
+- 특정 서비스를 이용하는 사용자(고객)
+- 웹 브라우저
+
+### Server
+- 특성 서비스를 제공하는 자
+![image](https://github.com/Gnyo/React/assets/102850495/7fed13d7-e048-430a-bfd4-eb760da6e0cf)
