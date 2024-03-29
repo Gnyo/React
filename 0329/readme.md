@@ -89,3 +89,29 @@ expression은 constant or literal, variable, operator, Function-method 등으로
 --- 
 
 ### JSX Code 작성 실습
+
+---
+
+### 간단한 시계 만들기(JavaScript)
+#### 코드
+
+#### 서버 불러오는 방법
+- 코드 부분에서 오른쪽 마우스 클릭
+- Open with Live Server 클릭
+![image](https://github.com/Gnyo/React/assets/102850495/6b62f5e3-a0c2-4c4c-961a-e5f7c2a164ce)
+
+#### 결과
+
+### 간단한 시계 만들기(React)
+#### 코드
+
+
+#### 결과
+
+### 바이너리 시계 만들기
+#### 코드
+![image](https://github.com/Gnyo/React/assets/102850495/50a866d5-060f-4490-88b9-d6a04ade830a)
+![image](https://github.com/Gnyo/React/assets/102850495/6b68b405-7a57-4a2d-9f87-5ce7353855fd)
+
+#### 결과
+![image](https://github.com/Gnyo/React/assets/102850495/09e68d41-8e39-4420-96c4-3ee5848eba0c)
