@@ -33,58 +33,57 @@
 #### ① 반드시 부모 요소 하나가 감싸는 형태여야 함
 - Virtual DOM에서 컴포넌트 변화를 감지할 때 효율적으로 비교할 수 있도록 컴포넌트 내부는 하나의 DOM 트리 구조로 이루어져야 한다는 규칙이 있기 때문
 - 태그가 비어있다면 XML처럼 /> 를 이용해 바로 닫아주어야 함
-- JSX 태그는 자식을 포함할 수 있음
+- JSX 태그는 자식을 포함할 수 있음 </br>
 
 #### ② 자바스크립트 표현식
 - JSX 안에서도 자바스크립트 표현식을 사용할 수 있음
 - 자바스크립트 표현식을 작성하려면 JSX내부에서 코드를 { }로 감싸주면 됨
 - 유효한 모든 JavaScript 표현식을 넣을 수 있음
 ![image](https://github.com/Gnyo/React/assets/102850495/59e8c527-4d70-435e-89d0-13041b7b9981)
-예를 들어 var = expression
-expression은 constant or literal, variable, operator, Function-method 등으로 구성됨
-중괄호 안에 expression 구성 요소 들어갈 수 있음
+예를 들어 var = expression</br>
+expression은 constant or literal, variable, operator, Function-method 등으로 구성됨</br>
+중괄호 안에 expression 구성 요소 들어갈 수 있음 </br>
 
 #### ③ JSX 자체도 표현식임
 - 컴파일이 끝나면, JSX 표현식이 JavaScript 객체로 인식됨
-- 즉, JSX를 if 구문 및 for loop 안에 사용하고, 변수에 할당하고, 인자로서 받아들이고, 함수로부터 반환할 수 있다.
-- SX는 자바스크립트 문법을 확장시킨 것, 따라서 모든 자바 스크립트 문법을 지원한다.
+- 즉, JSX를 if 구문 및 for loop 안에 사용하고, 변수에 할당하고, 인자로서 받아들이고, 함수로부터 반환 가능
+- SX는 자바스크립트 문법을 확장시킨 것, 따라서 모든 자바 스크립트 문법을 지원
 - 스크립트에 추가로 XML과 HTML 섞어서 사용하면 됨
-- xml, html 코드를 사용 시 중간에 자바스크립트 코드를 사용하고 싶으면 중괄호 {}를 사용하여 묶어주면 된다.
-![image](https://github.com/Gnyo/React/assets/102850495/aba0fead-5b13-4488-a434-ee75dc199030)
+- xml, html 코드를 사용 시 중간에 자바스크립트 코드를 사용하고 싶으면 중괄호 {}를 사용하여 묶어주면 됨
+![image](https://github.com/Gnyo/React/assets/102850495/aba0fead-5b13-4488-a434-ee75dc199030) </br>
 
 #### ④ if문(for문) 대신 삼항 연산자(조건부 연산자) 사용
 - if 구문과 for 루프는 JavaScript 표현식이 아니기 때문에 JSX 내부 자바스크립트 표현식에서는 사용할 수 없음
 - 문장 사용 불가, 수식 가능
 - 그렇기 때문에 조건부에 따라 다른 렌더링 시 JSX 주변 코드에서 if문을 사용하거나, {}안에서 삼항 연산자(조건부 연산자) 사용
 - 삼항 연산자는 operator이므로 사용 가능함
-![image](https://github.com/Gnyo/React/assets/102850495/e476c6a3-ae74-4484-ab12-12fa8722b4cc)
+![image](https://github.com/Gnyo/React/assets/102850495/e476c6a3-ae74-4484-ab12-12fa8722b4cc) </br>
 
-#### ⑤ JSX 속성 정의
-- 속성에 따옴표를 이용해 문자열 리터럴을 정의할 수 있다.
-- 속성에 중괄호를 이용해 자바스크립트 표현식을 포함시킬 수 있다.
-  >> const element = <div tabIndex="0"></div>;</br>
-  >> const element = <img src={user.avatarUrl}></img>;
+#### ⑤ JSX 속성 정의(표현을 위해 코드의 <>를 ＜＞으로 대체)
+- 속성에 따옴표를 이용해 문자열 리터럴 정의 가능
+- 속성에 중괄호를 이용해 자바스크립트 표현식 포함 가능
+  > const element = ＜div tabIndex="0"＞＜/div＞; </br>
+  > const element = ＜img src={user.avatarUrl}＞＜/img＞; </br>
 
-- 스타일 적용
-• 리액트에서 DOM 요소에 스타일을 적용할 때는 문자열 형태로 넣는 것이 아니라 객체 형태로 넣어줘야 한다.
-• 자바스크립트 코드니까 중괄호가 있는데 객체형태이므로 또 중괄호가 생겨 이중 중괄호 형태가 된 것이다.
-• 또한 스타일 이름 중에서 background-color처럼 -문자가 포함되는 이름은 -문자를 없애고 카멜 표기법으로 작성한다.
-• background-color는 backgroundColor로 작성한다.
-중괄호 두개 사용
-  >> <p style="color: blue">Lorem ipsum dolor.</p>
-  >> <p style={{color: blue}}>Lorem ipsum dolor.</p>
+- 리액트에서 DOM 요소에 스타일을 적용할 때는 문자열 형태로 넣는 것이 아니라 객체 형태로 넣어줘야 함
+- 자바스크립트 코드니까 중괄호가 있는데 객체형태이므로 또 중괄호가 생겨 이중 중괄호 형태가 된 것
+- 또한 스타일 이름 중에서 background-color처럼 -문자가 포함되는 이름은 -문자를 없애고 카멜 표기법으로 작성
+- background-color는 backgroundColor로 작성
+- 중괄호 두개 사용
+  > ＜p style="color: blue"＞ Lorem ipsum dolor. ＜/p＞ </br>
+  > ＜p style={{color: blue}}＞ Lorem ipsum dolor. ＜/p＞ </br>
 
 #### 6. React DOM은 HTML 어트리뷰트 이름 대신 camelCase를 사용한다.
 1. JSX 스타일링
-- JSX에서 자바스크립트 문법을 쓰려면 {}를 써야 하기 때문에, 스타일을 적용할 때에도 객체 형태로 넣어 주어야 한다.
-- 카멜 표기법으로 작성해야 한다. (font-size => fontSize)
+- JSX에서 자바스크립트 문법을 쓰려면 {}를 써야 하기 때문에, 스타일을 적용할 때에도 객체 형태로 넣어 주어야 함
+- 카멜 표기법으로 작성해야 함 (font-size => fontSize)
 2. class 대신 className
-- 일반 HTML에서 CSS 클래스를 사용할 때에는 class 라는 속성을 사용한다.
-- JSX에서는class는 className이 되고 tabindex는 tabIndex가 된다
+- 일반 HTML에서 CSS 클래스를 사용할 때에는 class라는 속성 사용
+- JSX에서 class는 className이 되고 tabindex는 tabIndex가 됨 </br>
 
 #### ⑦ JSX 내에서 주석 사용 방법
-- JSX 내에서 {/*…*/} 와 같은 형식을 사용 한다.
-- 시작태그를 여러줄 작성시에는, 내부에서 // 의 형식을 사용할 수 있다
+- JSX 내에서 {/*…*/}와 같은 형식 사용
+- 시작 태그를 여러 줄 작성 시에는, 내부에서 //의 형식 사용 가능
 
 --- 
 
@@ -106,30 +105,37 @@ expression은 constant or literal, variable, operator, Function-method 등으로
 ![image](https://github.com/Gnyo/React/assets/102850495/f0db735b-67a0-4fc4-9ffa-d5dcbf8b2fca)
 
 ---
+### Elements
+
+---
 
 ### 간단한 시계 만들기(JavaScript)
 #### 코드
-![image](https://github.com/Gnyo/React/assets/102850495/f9be916b-6c14-4a5b-804f-757d94cc39b0)
+- 처음 시작은 오후 01:44:40으로 시작되고, 자바스크립트가 실행되면 현재 시각으로 변경되는 코드
+![image](https://github.com/Gnyo/React/assets/102850495/8b407bb8-8a77-4307-bd21-41b481717dea)
 
 #### 서버 불러오는 방법
 - 코드 부분에서 오른쪽 마우스 클릭
-- Open with Live Server 클릭
-![image](https://github.com/Gnyo/React/assets/102850495/6b62f5e3-a0c2-4c4c-961a-e5f7c2a164ce)
+- Open with Live Server 클릭</br>
+![image](https://github.com/Gnyo/React/assets/102850495/25c0272e-269e-4c40-ba09-9d7e0da6aee9)
 
 #### 결과
-![image](https://github.com/Gnyo/React/assets/102850495/095eeaa8-552b-45ae-b21e-0de9c406f7b3)
+![image](https://github.com/Gnyo/React/assets/102850495/663c266e-212c-419b-a81c-86b160a24433)
+![image](https://github.com/Gnyo/React/assets/102850495/e6a03429-b3cf-4b70-9abf-5cbb52fa127a) </br>
 
 
 ### 간단한 시계 만들기(React)
 #### 코드
-
+- 정기적으로 시간을 출력하는 코드
+![image](https://github.com/Gnyo/React/assets/102850495/69ef77f0-b3b4-4ced-b398-dc1f26c9ca8f)
 
 #### 결과
+![image](https://github.com/Gnyo/React/assets/102850495/10cfd350-e30d-4191-ab5d-5276d63336f0)</br>
 
 ### 바이너리 시계 만들기
 #### 코드
-![image](https://github.com/Gnyo/React/assets/102850495/50a866d5-060f-4490-88b9-d6a04ade830a)
-![image](https://github.com/Gnyo/React/assets/102850495/6b68b405-7a57-4a2d-9f87-5ce7353855fd)
+![image](https://github.com/Gnyo/React/assets/102850495/e9114110-01a8-41be-8a43-3d962d8d9f0f)
+![image](https://github.com/Gnyo/React/assets/102850495/5af1fd66-6c68-4f95-aae5-1b29a07deda0)
 
 #### 결과
-![image](https://github.com/Gnyo/React/assets/102850495/09e68d41-8e39-4420-96c4-3ee5848eba0c)
+![image](https://github.com/Gnyo/React/assets/102850495/46e3566a-604f-49ac-a019-356f996c508a)
