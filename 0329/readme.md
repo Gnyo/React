@@ -49,7 +49,7 @@ expression은 constant or literal, variable, operator, Function-method 등으로
 - 즉, JSX를 if 구문 및 for loop 안에 사용하고, 변수에 할당하고, 인자로서 받아들이고, 함수로부터 반환 가능
 - SX는 자바스크립트 문법을 확장시킨 것, 따라서 모든 자바 스크립트 문법을 지원
 - 스크립트에 추가로 XML과 HTML 섞어서 사용하면 됨
-- xml, html 코드를 사용 시 중간에 자바스크립트 코드를 사용하고 싶으면 중괄호 {}를 사용하여 묶어주면 됨
+- xml, html 코드를 사용 시 중간에 자바스크립트 코드를 사용하고 싶으면 중괄호 {}를 사용하여 묶어주면 됨 </br>
 ![image](https://github.com/Gnyo/React/assets/102850495/aba0fead-5b13-4488-a434-ee75dc199030) </br>
 
 #### ④ if문(for문) 대신 삼항 연산자(조건부 연산자) 사용
@@ -105,37 +105,62 @@ expression은 constant or literal, variable, operator, Function-method 등으로
 ![image](https://github.com/Gnyo/React/assets/102850495/f0db735b-67a0-4fc4-9ffa-d5dcbf8b2fca)
 
 ---
+
 ### Elements
+- 가상 DOM은 자바스크립트 객체, 가상 DOM은 리액트 엘리먼트로 이루어져 있고 브라우저 DOM은 DOM 앨리먼트로 이루어져 있음
+- 리액트 앱을 이루는 가장 기본적인 단위
+- 리액트 앨리먼트는 브라우저 DOM을 만들기 위해 개발자와 브라우저 DOM을 이어주는 오작교
+- 앨리먼트(element)는 View에 렌더링할 내용을 React에 알려주기 위한 수단으로, React 애플리케이션을 구성하는 가장 작은 블록
+- React 엘리먼트는 HTML 태그의 이름을 값으로 가지는 type 필드와 그 외 속성들을 값으로 전달받는 props 필드로 구성된 객체(object) 형태로 정의되며, React는 이 객체를 읽어들여 DOM을 구성하고 최신 상태로 업데이트하는데 사용
+- React 엘리먼트는 일반 객체(plain object)로 손쉽게 생성할 수 있지만, 불변 객체(immutable object)이기 때문에 일단 생성된 후에는 상태나 속성을 변경할 수 없음
+- 따라서 React에서 UI를 업데이트하는 방법은 새로운 엘리먼트를 생성하고, 이를 render() 메소드에 전달
+![image](https://github.com/Gnyo/React/assets/102850495/12da1604-d2f0-4b71-9f15-2e8115418991)</br>
+![image](https://github.com/Gnyo/React/assets/102850495/fd2b0772-318f-4e98-9a01-ebfe25e19a66)</br>
+
+#### 엘리먼트 렌더링
+- ReactDOM은 UI를 실제로 브라우저에 렌더링할 때 사용하는 라이브러리
+- ReactDOM의 render 함수는 리액트 엘리먼트와 해당 엘리먼트의 모든 자식 엘리먼트를 루트(root) DOM 노드에 렌더
+- 루트 DOM 노드는 public 폴더에 있는 index.html 파일의 <div id="root"></div>
+- 만들어진 리액트 엘리먼트는 모두 이 노드 안에 들어가기 때문에 루트라는 이름이 붙여짐
+- React만으로 구축된 애플리케이션은 일반적으로 단일 루트 DOM 노드를 가짐
+- React 엘리먼트를 렌더링 하기 위해서는 우선 DOM 엘리먼트를 ReactDOM.createRoot()에 전달한 다음, React 엘리먼트를 root.render()에 전달해야 함
+- 모든 엘리먼트는 React DOM에서 관리하고, 루트(root)DOM 노드라고 부름
+- React 엘리먼트를 루트 DOM 노드에 렌더링하려면 ReactDOM.render()로 전달하면 됨
 
 ---
 
-### 간단한 시계 만들기(JavaScript)
-#### 코드
+### React로 DOM 변경하기 
+#### 간단한 시계 만들기(JavaScript)
+1. 코드
+- 자바스크립트로 실시간 시간 표시하기
 - 처음 시작은 오후 01:44:40으로 시작되고, 자바스크립트가 실행되면 현재 시각으로 변경되는 코드
 ![image](https://github.com/Gnyo/React/assets/102850495/8b407bb8-8a77-4307-bd21-41b481717dea)
 
-#### 서버 불러오는 방법
+2. 서버 불러오는 방법
 - 코드 부분에서 오른쪽 마우스 클릭
 - Open with Live Server 클릭</br>
 ![image](https://github.com/Gnyo/React/assets/102850495/25c0272e-269e-4c40-ba09-9d7e0da6aee9)
 
-#### 결과
+3. 결과
 ![image](https://github.com/Gnyo/React/assets/102850495/663c266e-212c-419b-a81c-86b160a24433)
 ![image](https://github.com/Gnyo/React/assets/102850495/e6a03429-b3cf-4b70-9abf-5cbb52fa127a) </br>
 
 
-### 간단한 시계 만들기(React)
-#### 코드
+#### 간단한 시계 만들기(React)
+1. 코드
 - 정기적으로 시간을 출력하는 코드
 ![image](https://github.com/Gnyo/React/assets/102850495/69ef77f0-b3b4-4ced-b398-dc1f26c9ca8f)
 
-#### 결과
+2. 결과
 ![image](https://github.com/Gnyo/React/assets/102850495/10cfd350-e30d-4191-ab5d-5276d63336f0)</br>
 
-### 바이너리 시계 만들기
-#### 코드
+#### 바이너리 시계 만들기
+1. 코드
+- ※1 부분에서 현재 시각을 2진수로 나타냄
+- ※2 부분에서 바이너리 시계의 각 줄을 나타내는 리액트 객체를 JSX로 만들고, lines 배열에 추가
+- ※3 부분에서 앞의 코드에서 화면에 DOM을 변경
 ![image](https://github.com/Gnyo/React/assets/102850495/e9114110-01a8-41be-8a43-3d962d8d9f0f)
 ![image](https://github.com/Gnyo/React/assets/102850495/5af1fd66-6c68-4f95-aae5-1b29a07deda0)
 
-#### 결과
+2. 결과
 ![image](https://github.com/Gnyo/React/assets/102850495/46e3566a-604f-49ac-a019-356f996c508a)
