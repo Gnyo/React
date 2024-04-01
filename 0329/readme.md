@@ -4,10 +4,10 @@
 - JSX는 자바스크립트로 변환이 되어야 실행됨
 - 자바스크립트와 HTML을 같이 기술 가능
 - 원래: HTML 안에 자바스크립트를 엮는 방식 -> JSX: 자바스크립트 안에 HTML 태그를 엮는 방식
-- DOM을 구성할 때 JSX로 구성한다.
+- DOM을 구성할 때 JSX로 구성한다.</br></br>
 ![image](https://github.com/Gnyo/React/assets/102850495/83ff0565-b94d-4714-a9ac-a5568b089c36)
 
-! 셋 모두 같은 결과를 출력하는 코드임</br>
+아래의 코드들 세 개 모두 같은 결과를 출력하는 코드임</br>
 ![image](https://github.com/Gnyo/React/assets/102850495/971c12e4-ad59-4d5b-9394-49c6696aa5a8)
 ![image](https://github.com/Gnyo/React/assets/102850495/cad02242-077d-4524-8554-d46712b0ac66)
 ![image](https://github.com/Gnyo/React/assets/102850495/eda025a3-ac65-4ad0-b606-423b81352578)
@@ -89,6 +89,21 @@ expression은 constant or literal, variable, operator, Function-method 등으로
 --- 
 
 ### JSX Code 작성 실습
+- 터미널에서 아래의 명령어를 입력하여 'book'이라는 파일 생성
+> npx create-react-app book
+
+- book/src/jsxCode/book.js에 아래의 코드 작성
+![image](https://github.com/Gnyo/React/assets/102850495/22566617-b9c8-4880-a95f-95fbbef66262)
+
+- book/src/jsxCode/book.js에 아래의 코드 작성
+![image](https://github.com/Gnyo/React/assets/102850495/c1af0b98-8a62-4bd9-a97c-971697d86cbf)
+
+- book/src/index.js를 아래와 같이 수정
+![image](https://github.com/Gnyo/React/assets/102850495/20aa7e1a-a570-45ff-a8e4-f58ed7ffbd81)
+
+- 터미널에서 아래의 명령어를 입력하여 서버 불러오기
+> npm start
+![image](https://github.com/Gnyo/React/assets/102850495/f0db735b-67a0-4fc4-9ffa-d5dcbf8b2fca)
 
 ---
 
