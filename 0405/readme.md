@@ -42,14 +42,15 @@
 ### Function Component 만들기
 1. 터미널에서 comp 리액트 파일 만들기
 - 리액트 파일은 소문자로 구성되어야 함
-> npx create-react-app comp</br>
-![image](https://github.com/Gnyo/React/assets/102850495/291e9cfd-77be-489e-85b7-c29171813842)
+  > npx create-react-app comp</br>
+  
+  ![image](https://github.com/Gnyo/React/assets/102850495/291e9cfd-77be-489e-85b7-c29171813842)
 
 2. comp 폴더의 src에서 funcComp 폴더 만들기
 - 폴더는 소문자로 시작하는 카멜케이스로 이름을 지어야 함
 
-3. funcComp 폴더에 각각 "Header.js", "Main.js", "Footer.js" 파일 만들기</br>
-- 컴포넌트를 만드는 파일은 대문자로 시작하는 카멜케이스로 이름을 지어야 함
+3. funcComp 폴더에 각각 "Header.js", "Main.js", "Footer.js" 파일 만들기
+- 컴포넌트를 만드는 파일은 대문자로 시작하는 카멜케이스로 이름을 지어야 함</br>
 ![image](https://github.com/Gnyo/React/assets/102850495/1d4a6fb1-2edc-4944-af9a-773b6d9e8412)
 
 4. 각 파일에 이미지와 같이 코드 입력
@@ -62,9 +63,11 @@
 ![image](https://github.com/Gnyo/React/assets/102850495/33592601-c001-4eff-a43b-508aabb90148)
 
 6. 터미널에서 서버 불러오기
+- 터미널로 comp 폴더를 들어간 후 서버 불러오기
   > cd comp</br>
-  > npm start
-![image](https://github.com/Gnyo/React/assets/102850495/0d1b00da-baa3-44a7-9931-31a34615ff34)
+  > npm start</br>
+
+  ![image](https://github.com/Gnyo/React/assets/102850495/0d1b00da-baa3-44a7-9931-31a34615ff34)
 
 
 ### Class Component 만들기
@@ -81,7 +84,7 @@
 - 프로퍼티는 수정할 수 없음(자식 입장에서는 읽기 전용인 데이터임)
 - React Component는 props를 이용해 서로 통신
 - 모든 부모 컴포넌트는 props를 줌으로써 몇몇의 정보를 자식 컴포넌트에게 전달 가능
-- 즉, 부모 컴포넌트가 자식 컴포넌트에게 물려준 데이터
+- 즉, 부모 컴포넌트가 자식 컴포넌트에게 물려준 데이터</br>
 ![image](https://github.com/Gnyo/React/assets/102850495/88e10768-67c4-427b-a5d0-aafbcee1ab8f)
 
 ---
@@ -90,7 +93,7 @@
 1. "MyComponent" 파일 만들기</br>
 ![image](https://github.com/Gnyo/React/assets/102850495/b956291f-225a-45aa-ac66-ef1a791ed3e3)
 #### 1개의 프로퍼티 넘기기
-#### 여러 개의 프로퍼티 넘기기
+#### 여러 개의 프로퍼티 넘기기</br>
 ![image](https://github.com/Gnyo/React/assets/102850495/64f257f1-a807-4458-885b-7711141c2c60)
 #### 숫자 프로퍼티 넘기기
 - App.js에 문자열 이외에는 중괄호({ }) 사용
@@ -134,5 +137,21 @@
 - https://www.iconfinder.com/ 해당 사이트에서 desktop, notebook, pad 이미지를 다운로드 받음</br>
 ![Desktop](https://github.com/Gnyo/React/assets/102850495/a8627d92-1d14-46e2-bc54-e649ebc93e10)
 
-3. public 폴더에 img 폴더를 만들어서 다운로드 받은 이미지 넣기
-![image](https://github.com/Gnyo/React/assets/102850495/6eb49146-d8b9-43b9-b117-42c4ffd69e5b)
+3. public 폴더에 img 폴더를 만들어서 다운로드 받은 이미지 넣기</br>
+![Desktop](https://github.com/Gnyo/React/assets/102850495/ab3a16af-37a0-467d-808c-1073bbfa68f8)
+![Notebook](https://github.com/Gnyo/React/assets/102850495/eba68ac1-fd71-479a-91d4-194587c41a0e)
+![Pad](https://github.com/Gnyo/React/assets/102850495/7dd393ec-aed6-4ecc-8495-3fa540d030a4)
+
+
+5. src 폴더에 "FPhotoText.js" 파일을 만들어 이미지 속 코드 입력</br>
+- 'url'이라는 변수를 만들어 png 파일(이미지)의 주소 저장
+- return에서 'url'변수를 활용하여 이미지 반환하기</br>
+![image](https://github.com/Gnyo/React/assets/102850495/94b6ea5b-19ec-44e7-903d-e465c6c5d86f)
+
+5. "App.js" 파일 수정
+- FPhotoText 컴포넌트에 각 이미지 이름("desktop", "notebook", "pad")를 입력</br>
+![image](https://github.com/Gnyo/React/assets/102850495/8038f6ac-8375-40b6-a25f-07029544e79b)
+
+6. 터미널에서 서버 불러오기
+> npm start</br>
+![image](https://github.com/Gnyo/React/assets/102850495/a2870819-773b-402b-8454-646a978f659c)
