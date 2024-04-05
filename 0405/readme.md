@@ -41,13 +41,15 @@
 
 ### Function Component 만들기
 1. 터미널에서 comp 리액트 파일 만들기
+- 리액트 파일은 소문자로 구성되어야 함
 > npx create-react-app comp</br>
 ![image](https://github.com/Gnyo/React/assets/102850495/291e9cfd-77be-489e-85b7-c29171813842)
 
 2. comp 폴더의 src에서 funcComp 폴더 만들기
-- 폴더는 소문자로 시작하는 카멜케이스로 작성하고, 컴포넌트를 만드는 파일은 대문자로 시작하는 카멜케이스로 이름을 지어야 함!
+- 폴더는 소문자로 시작하는 카멜케이스로 이름을 지어야 함
 
 3. funcComp 폴더에 각각 "Header.js", "Main.js", "Footer.js" 파일 만들기</br>
+- 컴포넌트를 만드는 파일은 대문자로 시작하는 카멜케이스로 이름을 지어야 함
 ![image](https://github.com/Gnyo/React/assets/102850495/1d4a6fb1-2edc-4944-af9a-773b6d9e8412)
 
 4. 각 파일에 이미지와 같이 코드 입력
@@ -93,6 +95,8 @@
 #### 숫자 프로퍼티 넘기기
 - App.js에 문자열 이외에는 중괄호({ }) 사용
 
+---
+
 ### 프로퍼티의 자료형, 타입 정의
 - 프로퍼티의 자료형을 미리 선언 가능
 - React 엔진이 프로퍼티로 전달하는 값을 효율적으로 알 수 있고, 버그 예방에도 도움
@@ -103,4 +107,32 @@
 ![image](https://github.com/Gnyo/React/assets/102850495/aafbb268-bd9b-471c-8a3f-f13d15aa163a)
 - ex) Main.js: name 프로퍼티가 없는 경우, '디폴트' 값을 사용하게 처리
 
+### 프로퍼티의 필수값 설정
+- 디폴트 설정을 하지 않은 경우 해당 프로퍼티를 필수 프로퍼티로 선언 가능</br>
+![image](https://github.com/Gnyo/React/assets/102850495/955dafd0-87fb-4865-ba84-6576e07403a8)
+- ex) Main.js: isRequired를 통한 필수값 설정
 
+### 불리언(Boolen) 프로퍼티 사용
+- true, false만 정의 가능한 자료형
+- 중괄호로 감싸 전달할 필요 없이 프로퍼티의 이름만 선언하면 됨</br>
+![image](https://github.com/Gnyo/React/assets/102850495/b86d541c-8f9c-43d3-ae03-084fade1c87d)
+
+### props.children 활용
+- children을 사용하여 내부에 있는 내용을 표현 가능</br>
+![image](https://github.com/Gnyo/React/assets/102850495/ccc8bf37-5b37-4bfa-8bf9-6205ae2e5b22)
+- 왼쪽의 Wrapper.js에는 Main이 보이지 않으나 컴포넌트 정의할 때 children을 정의하면 오른쪽 Wrapper.js처럼 Main이 보임</br>
+![image](https://github.com/Gnyo/React/assets/102850495/d9f8ce34-22b9-4222-987f-7254aafd2fde)
+
+### 이미지와 텍스트 출력 컴포넌트</br>
+![image](https://github.com/Gnyo/React/assets/102850495/14885e98-e0a1-436c-9061-a2e3b7a59892)
+
+#### 실슴
+1. 터미널에서 textimg 리액트 파일 만들기
+> npx create-react-app textimg</br>
+
+2. 아이콘 이미지 다운로드
+- https://www.iconfinder.com/ 해당 사이트에서 desktop, notebook, pad 이미지를 다운로드 받음</br>
+![Desktop](https://github.com/Gnyo/React/assets/102850495/a8627d92-1d14-46e2-bc54-e649ebc93e10)
+
+3. public 폴더에 img 폴더를 만들어서 다운로드 받은 이미지 넣기
+![image](https://github.com/Gnyo/React/assets/102850495/6eb49146-d8b9-43b9-b117-42c4ffd69e5b)
