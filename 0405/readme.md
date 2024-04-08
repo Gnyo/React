@@ -9,12 +9,11 @@
 - 어떤 데이터 집합을 사용하든 같은 컴포넌트를 사용하면 모두 동일한 DOM 구조가 반환
 
 #### React Component</br>
-![image](https://github.com/Gnyo/React/assets/102850495/cd048f01-8eeb-43ef-b703-6d4ef182269f)
-![image](https://github.com/Gnyo/React/assets/102850495/e62f5f32-1e2b-4bfd-b810-855f752402b4)
+![image](https://github.com/Gnyo/React/assets/102850495/cd048f01-8eeb-43ef-b703-6d4ef182269f) | ![image](https://github.com/Gnyo/React/assets/102850495/e62f5f32-1e2b-4bfd-b810-855f752402b4)
+---| ---|
 - React Component에서의 입력은 props, 출력은 React Element
 - props: property(재산, 속성, 특성)의 복수형, 리액트 컴포넌트의 속성</br>
 ![image](https://github.com/Gnyo/React/assets/102850495/9817225e-6e09-4e34-a0bb-730370c5604e)
-
 
 ### Function Component
 - Recat Component = pure함수(늘 같은 입력값을 받고, 늘 같은 결과값을 반환) 같은 역할을 해야 함
@@ -51,9 +50,10 @@
 
 4. 각 파일에 이미지와 같이 코드 입력
 - vsCode에서는 'rfc' 입력 후 'Tab'버튼 누르면 바로 function Component 코드 틀이 만들어짐</br>
-![image](https://github.com/Gnyo/React/assets/102850495/1aa78d46-c881-4dcc-b647-80a0b5c556ad)</br>
-![image](https://github.com/Gnyo/React/assets/102850495/8e178c29-ed88-4335-a397-2bf2c2caa40c)</br>
-![image](https://github.com/Gnyo/React/assets/102850495/a142e028-9f27-43e1-a1d7-2ef85e1ad377)
+
+![image](https://github.com/Gnyo/React/assets/102850495/61309282-1f4a-467a-8bf1-4e2b64bc14b7) | ![image](https://github.com/Gnyo/React/assets/102850495/7cd76178-1696-4f50-b7a0-19dc0153066b) | ![image](https://github.com/Gnyo/React/assets/102850495/e8512502-d7c1-4363-a44f-2380b34b604d)
+---| ---| ---|
+
 
 5. 실행 파일인 App.js 수정</br>
 ![image](https://github.com/Gnyo/React/assets/102850495/33592601-c001-4eff-a43b-508aabb90148)
@@ -73,9 +73,9 @@
 
 2. 각 파일에 이미지와 같이 코드 입력
 - vsCode에서는 'rfc' 입력 후 'Tab'버튼 누르면 바로 Class Component 코드 틀이 만들어짐</br>
-![image](https://github.com/Gnyo/React/assets/102850495/643ca12a-8524-4f6a-b337-d681d874cd48)
-![image](https://github.com/Gnyo/React/assets/102850495/8b6ea9e1-a74a-496c-8661-9c515eddf1ad)
-![image](https://github.com/Gnyo/React/assets/102850495/a6a88448-2601-4b65-b5b0-cfe25111b857)
+
+![image](https://github.com/Gnyo/React/assets/102850495/643ca12a-8524-4f6a-b337-d681d874cd48) | ![image](https://github.com/Gnyo/React/assets/102850495/8b6ea9e1-a74a-496c-8661-9c515eddf1ad) | ![image](https://github.com/Gnyo/React/assets/102850495/a6a88448-2601-4b65-b5b0-cfe25111b857)
+---| ---| ---|
 
 3. 실행 파일인 App.js 수정</br>
 ![image](https://github.com/Gnyo/React/assets/102850495/96e9d1d8-f265-47a2-9202-c972bbc37126)
@@ -110,13 +110,14 @@
 ![image](https://github.com/Gnyo/React/assets/102850495/3525e8e6-42c7-4360-8ae8-656c7c5091f6)
 
 3. App.js 파일 수정 후 터미널에서 서버 불러오기</br>
-![image](https://github.com/Gnyo/React/assets/102850495/1345edf8-ec22-45d7-81c1-ebcd00f36b24)</br>
-![image](https://github.com/Gnyo/React/assets/102850495/b956291f-225a-45aa-ac66-ef1a791ed3e3)
 
-4. MyComponent 컴포넌트를 이용하여 App.js에 여러 문장 만들기</br>
-![image](https://github.com/Gnyo/React/assets/102850495/10d71db2-805b-4ca1-a3bf-556ffe877233)</br>
-![image](https://github.com/Gnyo/React/assets/102850495/64f257f1-a807-4458-885b-7711141c2c60)
+![image](https://github.com/Gnyo/React/assets/102850495/1345edf8-ec22-45d7-81c1-ebcd00f36b24) | ![image](https://github.com/Gnyo/React/assets/102850495/b956291f-225a-45aa-ac66-ef1a791ed3e3)
+---| ---|
 
+5. MyComponent 컴포넌트를 이용하여 App.js에 여러 문장 만들기</br>
+
+![image](https://github.com/Gnyo/React/assets/102850495/10d71db2-805b-4ca1-a3bf-556ffe877233) | ![image](https://github.com/Gnyo/React/assets/102850495/64f257f1-a807-4458-885b-7711141c2c60)
+---| ---|
 ---
 
 ### 프로퍼티의 자료형, 타입 정의
