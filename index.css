@@ -1,7 +1,13 @@
-body{
-  margin: 50px;
-  margin-top: 30px;
-  border: 3px solid gray;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 40px;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f4f4f4;
+   border: 3px solid gray;
+  color: #333;
 }
 h2 {
   font-size: 30px;
@@ -10,7 +16,7 @@ h2 {
   padding: 20px;
 }
 p {
-  font-size: 20px;
+  font-size: 30px;
 }
 
 @media(max-width:800px) {
