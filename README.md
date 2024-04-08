@@ -24,3 +24,7 @@
 ④ <a href="https://gnyo.github.io/React/0329/과제/build/introduce.html"> 자기소개 React Web </a></br>
 ⑤ <a href="https://github.com/Gnyo/React/blob/main/0329/%EA%B3%BC%EC%A0%9C/HomeWork.fig"> 프로젝트 기획 figma 파일 Download </a></br>
 
+#### 0405
+① <a href="https://github.com/Gnyo/React/blob/main/0405/readme.md"> 강의 정리 </a></br>
+② <a href="https://gnyo.github.io/React/0329/과제/introduce.html"> 자기소개 React Web 컴포넌트로 구성 </a></br>
+③
