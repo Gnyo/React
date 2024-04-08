@@ -13,40 +13,54 @@
 ---| ---|
 - React Component에서의 입력은 props, 출력은 React Element
 - props: property(재산, 속성, 특성)의 복수형, 리액트 컴포넌트의 속성</br>
-![image](https://github.com/Gnyo/React/assets/102850495/9817225e-6e09-4e34-a0bb-730370c5604e)
+<p align="center">
+<img src= "https://github.com/Gnyo/React/assets/102850495/9817225e-6e09-4e34-a0bb-730370c5604e.png">
+</p>
 
 ### Function Component
 - Recat Component = pure함수(늘 같은 입력값을 받고, 늘 같은 결과값을 반환) 같은 역할을 해야 함
 - 즉 일종의 함수라고 생각</br>
-![image](https://github.com/Gnyo/React/assets/102850495/e5c9ce3e-76e5-4bc5-8e53-38258ff71b45)
+<p align="center">
+<img src= "https://github.com/Gnyo/React/assets/102850495/e5c9ce3e-76e5-4bc5-8e53-38258ff71b45.png">
+</p>
 
 
 ### Class Component
 - 자바스크립트 ES6의 class라는 것을 사용해서 만들어진 형태의 Component
 - Class Component의 경우 Function Component에 비해 몇 가지 추가적인 기능을 가짐</br>
-![image](https://github.com/Gnyo/React/assets/102850495/79de0146-39ca-4f7c-96f3-b4b08fe8c2ab)
+<p align="center">
+<img src= "https://github.com/Gnyo/React/assets/102850495/79de0146-39ca-4f7c-96f3-b4b08fe8c2ab.png">
+</p>
 - 이 함수는 Function Component를 Class Component로 만든 것
 
 ### Component name
 - 컴포넌트의 이름은 항상 대문자로 시작(리액트는 소문자로 시작하는 컴포넌트를 DOM 태그로 인식)
 - 직접 만든 컴포넌트는 대문자로, 소문자로 시작하는 컴포넌트는 HTML 컴포넌트임</br>
-![image](https://github.com/Gnyo/React/assets/102850495/21f7086b-e2db-4c80-8e74-893e0dc1ca4c)</br>
+<p align="center">
+<img src= "https://github.com/Gnyo/React/assets/102850495/21f7086b-e2db-4c80-8e74-893e0dc1ca4c.png">
+</p>
 
 ---
 
 ### Function Component 만들기 실습
 1. 터미널에서 comp 리액트 파일 만들기
 - 리액트 파일은 소문자로 구성되어야 함
-  > npx create-react-app comp</br>
-  
-  ![image](https://github.com/Gnyo/React/assets/102850495/291e9cfd-77be-489e-85b7-c29171813842)
+```
+npx create-react-app comp
+```
+
+<p align="center">
+<img src= "https://github.com/Gnyo/React/assets/102850495/291e9cfd-77be-489e-85b7-c29171813842.png">
+</p>
 
 2. comp 폴더의 src에서 funcComp 폴더 만들기
-- 폴더는 소문자로 시작하는 카멜케이스로 이름을 지어야 함
+- 폴더는 소문자로 시작하는 카멜케이스로 이름을 지어야 함<br><br><br><br><br>
 
 3. funcComp 폴더에 각각 "Header.js", "Main.js", "Footer.js" 파일 만들기
-- 컴포넌트를 만드는 파일은 대문자로 시작하는 카멜케이스로 이름을 지어야 함</br>
-![image](https://github.com/Gnyo/React/assets/102850495/1d4a6fb1-2edc-4944-af9a-773b6d9e8412)
+- 컴포넌트를 만드는 파일은 대문자로 시작하는 카멜케이스로 이름을 지어야 함<br>
+<p align="center">
+<img src= "https://github.com/Gnyo/React/assets/102850495/1d4a6fb1-2edc-4944-af9a-773b6d9e8412.png">
+</p>
 
 4. 각 파일에 이미지와 같이 코드 입력
 - vsCode에서는 'rfc' 입력 후 'Tab'버튼 누르면 바로 function Component 코드 틀이 만들어짐</br>
@@ -56,20 +70,27 @@
 
 
 5. 실행 파일인 App.js 수정</br>
-![image](https://github.com/Gnyo/React/assets/102850495/33592601-c001-4eff-a43b-508aabb90148)
+<p align="center">
+<img src= "https://github.com/Gnyo/React/assets/102850495/33592601-c001-4eff-a43b-508aabb90148.png">
+</p>
 
 6. 터미널에서 서버 불러오기
 - 터미널로 comp 폴더를 들어간 후 서버 불러오기
-  > cd comp</br>
-  > npm start</br>
-
-  ![image](https://github.com/Gnyo/React/assets/102850495/0d1b00da-baa3-44a7-9931-31a34615ff34)
+```
+cd comp
+npm start
+```
+<p align="center">
+<img src= "https://github.com/Gnyo/React/assets/102850495/0d1b00da-baa3-44a7-9931-31a34615ff34.png">
+</p>
 
 
 ### Class Component 만들기 실습
 1. comp 폴더의 src에서 classComp 폴더를 만들고 각각 "Header.js", "Main.js", "Footer.js" 파일 만들기</br>
 - 컴포넌트를 만드는 파일은 대문자로 시작하는 카멜케이스로 이름을 지어야 함</br>
-![image](https://github.com/Gnyo/React/assets/102850495/34f71ae4-fc0c-462b-8733-71b299f83847)
+<p align="center">
+<img src= "https://github.com/Gnyo/React/assets/102850495/34f71ae4-fc0c-462b-8733-71b299f83847.png">
+</p>
 
 2. 각 파일에 이미지와 같이 코드 입력
 - vsCode에서는 'rfc' 입력 후 'Tab'버튼 누르면 바로 Class Component 코드 틀이 만들어짐</br>
@@ -78,14 +99,19 @@
 ---| ---| ---|
 
 3. 실행 파일인 App.js 수정</br>
-![image](https://github.com/Gnyo/React/assets/102850495/96e9d1d8-f265-47a2-9202-c972bbc37126)
+<p align="center">
+<img src= "https://github.com/Gnyo/React/assets/102850495/96e9d1d8-f265-47a2-9202-c972bbc37126.png">
+</p>
 
 4. 터미널에서 서버 불러오기
 - 터미널로 comp 폴더를 들어간 후 서버 불러오기
-  > cd comp</br>
-  > npm start</br>
-
-  ![image](https://github.com/Gnyo/React/assets/102850495/0d1b00da-baa3-44a7-9931-31a34615ff34)
+```
+cd comp
+npm start
+```
+<p align="center">
+<img src= "https://github.com/Gnyo/React/assets/102850495/0d1b00da-baa3-44a7-9931-31a34615ff34.png">
+</p>
 
 ---
 
@@ -104,10 +130,12 @@
 ---
 
 ### 1개의 props를 넘기는 예제 실습
-1. "MyComponent" 파일 만들기</br>
+1. "MyComponent.js" 파일 만들기</br>
 
 2. props를 이용하여 코드 입력</br>
-![image](https://github.com/Gnyo/React/assets/102850495/3525e8e6-42c7-4360-8ae8-656c7c5091f6)
+<p align="center">
+<img src= "https://github.com/Gnyo/React/assets/102850495/3525e8e6-42c7-4360-8ae8-656c7c5091f6.png">
+</p>
 
 3. App.js 파일 수정 후 터미널에서 서버 불러오기</br>
 
@@ -118,6 +146,7 @@
 
 ![image](https://github.com/Gnyo/React/assets/102850495/10d71db2-805b-4ca1-a3bf-556ffe877233) | ![image](https://github.com/Gnyo/React/assets/102850495/64f257f1-a807-4458-885b-7711141c2c60)
 ---| ---|
+
 ---
 
 ### 프로퍼티의 자료형, 타입 정의
@@ -153,8 +182,9 @@
 
 #### 이미지, 텍스트 출력 컴포넌트 실습
 1. 터미널에서 textimg 리액트 파일 만들기
-> npx create-react-app textimg</br>
-
+```
+npx create-react-app textimg
+```
 2. 아이콘 이미지 다운로드
 - https://www.iconfinder.com/ 해당 사이트에서 desktop, notebook, pad 이미지 다운로드</br>
 
@@ -166,13 +196,20 @@
 5. src 폴더에 "FPhotoText.js" 파일을 만들어 이미지 속 코드 입력</br>
 - 'url'이라는 변수를 만들어 png 파일(이미지)의 주소 저장
 - return에서 'url'변수를 활용하여 이미지 반환하기</br>
-![image](https://github.com/Gnyo/React/assets/102850495/94b6ea5b-19ec-44e7-903d-e465c6c5d86f)
+<p align="center">
+<img src= "https://github.com/Gnyo/React/assets/102850495/94b6ea5b-19ec-44e7-903d-e465c6c5d86f.png">
+</p>
 
 5. "App.js" 파일 수정
 - FPhotoText 컴포넌트에 각 이미지 이름("desktop", "notebook", "pad")를 입력</br>
-![image](https://github.com/Gnyo/React/assets/102850495/8038f6ac-8375-40b6-a25f-07029544e79b)
+<p align="center">
+<img src= "https://github.com/Gnyo/React/assets/102850495/8038f6ac-8375-40b6-a25f-07029544e79b.png">
+</p>
 
 6. 터미널에서 서버 불러오기
-> npm start</br>
-
-![image](https://github.com/Gnyo/React/assets/102850495/a2870819-773b-402b-8454-646a978f659c)
+```
+npm start
+```
+<p align="center">
+<img src= "https://github.com/Gnyo/React/assets/102850495/a2870819-773b-402b-8454-646a978f659c.png">
+</p>
