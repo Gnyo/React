@@ -1,16 +1,12 @@
 # Web Programming 04
 
-### 컴포넌트(Component)
-- 컴포넌트(Component) : 입력(props)을 받아 출력(Element)하는 역할
-- 리액트는 Component 기반의 구조 (ex. C언어는 function으로 구성)
+### Component(컴포넌트)
+- 입력(props)을 받아 출력(Element)하는 역할
+- 리액트는 Component 기반의 구조로 사용자에게 보여지는 UI 요소를 컴포넌트 단위로 구분하여 구현(ex. C언어는 function으로 구성)
 - 리액트는 모든 페이지가 Component로 구성되어 있고 하나의 Component는 또 다른 여러 개의 Component의
 조합으로 구성 가능
 - 프로그래밍에 있어 재사용이 가능한 각각의 독립된 모듈로, 웹 페이지를 만드는 퍼즐 조각을 뜻함
-- 리액트로 화면을 구성하게 되면, 사용자가 볼 수 있는 여러 가지 컴포넌트로 구성되어 있다. 사용자에게 보여지
-는 UI 요소를 컴포넌트 단위로 구분하여 구현할 수 있다.
-• 개발자는 컴포넌트 조각을 설계하고 만든 컴포넌트를 조합해서 사용자 인터페이스(user interface, UI)를 구축
-한다. UI 조각인 컴포넌트를 모으면 전체 퍼즐 그림인 웹 페이지를 만들 수 있다.
-• 어떤 데이터 집합을 사용하든 같은 컴포넌트를 사용하면 모두 동일한 DOM 구조가 반환된다.
+- 어떤 데이터 집합을 사용하든 같은 컴포넌트를 사용하면 모두 동일한 DOM 구조가 반환
 
 #### React Component</br>
 ![image](https://github.com/Gnyo/React/assets/102850495/cd048f01-8eeb-43ef-b703-6d4ef182269f)
@@ -35,7 +31,7 @@
 ### Component name
 - 컴포넌트의 이름은 항상 대문자로 시작(리액트는 소문자로 시작하는 컴포넌트를 DOM 태그로 인식)
 - 직접 만든 컴포넌트는 대문자로, 소문자로 시작하는 컴포넌트는 HTML 컴포넌트임</br>
-![image](https://github.com/Gnyo/React/assets/102850495/21f7086b-e2db-4c80-8e74-893e0dc1ca4c)
+![image](https://github.com/Gnyo/React/assets/102850495/21f7086b-e2db-4c80-8e74-893e0dc1ca4c)</br>
 
 ---
 
@@ -72,10 +68,24 @@
 
 ### Class Component 만들기
 1. comp 폴더의 src에서 classComp 폴더를 만들고 각각 "Header.js", "Main.js", "Footer.js" 파일 만들기</br>
+- 컴포넌트를 만드는 파일은 대문자로 시작하는 카멜케이스로 이름을 지어야 함</br>
 ![image](https://github.com/Gnyo/React/assets/102850495/34f71ae4-fc0c-462b-8733-71b299f83847)
 
 2. 각 파일에 이미지와 같이 코드 입력
 - vsCode에서는 'rfc' 입력 후 'Tab'버튼 누르면 바로 Class Component 코드 틀이 만들어짐</br>
+![image](https://github.com/Gnyo/React/assets/102850495/643ca12a-8524-4f6a-b337-d681d874cd48)
+![image](https://github.com/Gnyo/React/assets/102850495/8b6ea9e1-a74a-496c-8661-9c515eddf1ad)
+![image](https://github.com/Gnyo/React/assets/102850495/a6a88448-2601-4b65-b5b0-cfe25111b857)
+
+3. 실행 파일인 App.js 수정</br>
+![image](https://github.com/Gnyo/React/assets/102850495/96e9d1d8-f265-47a2-9202-c972bbc37126)
+
+4. 터미널에서 서버 불러오기
+- 터미널로 comp 폴더를 들어간 후 서버 불러오기
+  > cd comp</br>
+  > npm start</br>
+
+  ![image](https://github.com/Gnyo/React/assets/102850495/0d1b00da-baa3-44a7-9931-31a34615ff34)
 
 ---
 
@@ -134,8 +144,7 @@
 > npx create-react-app textimg</br>
 
 2. 아이콘 이미지 다운로드
-- https://www.iconfinder.com/ 해당 사이트에서 desktop, notebook, pad 이미지를 다운로드 받음</br>
-![Desktop](https://github.com/Gnyo/React/assets/102850495/a8627d92-1d14-46e2-bc54-e649ebc93e10)
+- https://www.iconfinder.com/ 해당 사이트에서 desktop, notebook, pad 이미지 다운로드</br>
 
 3. public 폴더에 img 폴더를 만들어서 다운로드 받은 이미지 넣기</br>
 ![Desktop](https://github.com/Gnyo/React/assets/102850495/ab3a16af-37a0-467d-808c-1073bbfa68f8)
