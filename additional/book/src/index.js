@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Introduce from './jsxCode/Introduce';
+import BookLibrary from './jsxCode/bookLibrary';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Introduce />
+    <BookLibrary />
   </React.StrictMode>
 );
 
