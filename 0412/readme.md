@@ -12,29 +12,44 @@
 ---
 
 ### 일반 변수를 사용하는 경우
-![alt text](image.png)
 - className?: jsx에서 class 속성 대신 사용
+![image](https://github.com/Gnyo/React/assets/102850495/8a41ceb5-ebb9-4e65-9f88-112d572f311d)
 
-1.
-![alt text](image-1.png)
+1. '+', '-' 버튼을 누르면 count가 증가 혹은 감소하는 'Counter.js' 코드 파일 생성
 
-2.
-![alt text](image-2.png)
+![image-1](https://github.com/Gnyo/React/assets/102850495/0a5536df-07d6-41c2-8b98-a16e272bc2cb)
+---|
+
+2. 'App.js' 수정
+
+![image-2](https://github.com/Gnyo/React/assets/102850495/b618df37-2590-4ae8-919e-e2ee2af196a8)
+---|
 
 3. 결과 출력
-![alt text](image-8.png)
+- 화면에 뜬 값이 변경되지 않음, 화면이 re-rendering되지 않음
+- count 값은 정상적으로 변경
+
+![image-8](https://github.com/Gnyo/React/assets/102850495/bb03c4a8-5948-4784-953f-9c65ee564b11)
+---|
 
 ### state를 사용하는 경우
 
-1.
-![alt text](image-4.png)
+1. state를 이용하여 'Counterstate.js' 코드 파일 생성
 
-2.
-![alt text](image-5.png)
+![image](https://github.com/Gnyo/React/assets/102850495/1cfcfc78-bbcb-4ca1-bc37-1a245991698b)
+---|
+
+2. 'App.js' 수정
+
+![image](https://github.com/Gnyo/React/assets/102850495/3f25824f-5b8c-440a-9f13-63bd926d9422)
+---|
 
 3. 결과 출력
+- 변수 값이 변경되었을 때 화면이 의도대로 re-rendering 됨
+- setState는 비동기적으로 작동함
+    + setCount로 count를 변경했으나, 변경 후 console.log로 확인해보니 값이 바로 바뀌지 않음
 
-![alt text](image-6.png) | ![alt text](image-7.png)
+![image-6](https://github.com/Gnyo/React/assets/102850495/b29aa740-f663-4169-a507-6349d790b6a9) | ![image](https://github.com/Gnyo/React/assets/102850495/0959319e-fa9d-43ce-b174-70c4deb5ad74)
 ---| ---|
 
 ---
