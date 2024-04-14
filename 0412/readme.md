@@ -161,5 +161,3 @@ this.setState( { 바꿀 스테이트값 기술 }, () => { 여기 콜백 함수 }
 ![image-24](https://github.com/Gnyo/React/assets/102850495/612925c4-2744-4db3-a72c-2aa2e3f3e9bf)
 
 ---
-
-### 스톱워치 만들기 실습
