@@ -26,7 +26,7 @@
 
 #### 0405
 ① <a href="https://github.com/Gnyo/React/blob/main/0405/readme.md"> 강의 정리 </a></br>
-② <a href="https://gnyo.github.io/React/0412/과제/introduce.html"> 자기소개 React Web 컴포넌트로 구성 </a></br>
+② <a href="https://gnyo.github.io/React/0405/과제/build/introduce.html"> 자기소개 React Web 컴포넌트로 구성 </a></br>
 
 #### 0412
 ① <a href="https://github.com/Gnyo/React/blob/main/0412/readme.md"> 강의 정리 </a></br>
