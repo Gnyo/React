@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+/* 기본 */
+.darkmode-button {
+    position: absolute;
+    top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+header {
+    background-color: #e29191;
+    max-width: 800px;
+    margin: 0px auto;
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 40px;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+    background-color: #fff;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.image-transition {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slideshow {
+    position: relative;
+    text-align: center;
+}
+
+.arrow {
+    background-color: transparent;
+    color: #333;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+.arrow:hover {
+    color: #e29191;
+  }
+
+.name {
+    background-color: #e29191;
+    font-weight: bold;
+    padding: 10px;
+    margin-right: 10px;
+    float: left;
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+}
+
+.merong {
+    padding: 10px;
+    width: calc(100% - 140px);
+}
+
+img {
+    display: block;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    margin: 10px;
+}
+
+h2 {
+    font-size: 25px;
+    text-align: center;
+    margin: 10px;
+}
+
+@media(max-width: 950px) {
+    img {
+        max-width: calc(100% - 40px); /* 창 크기에 따라 이미지 최대 너비 조절 */
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* 테이블 마지막 줄 제거 */
+tr:last-child td,
+tr:last-child th {
+    border-bottom: none;
+  }
+
+th {
+    background-color:#e29191;
+    color: #fff;
+    font-weight: normal;
+    text-align: center;
+}
+
+p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+a:hover { /* 호버 시 밑줄 표시 */
+    text-decoration: underline;
+}
+
+
+/* 다크모드 */
+.darkmode-button.dark-mode{
+    background-color: #fff;
+    color: #333;
+}
+
+body.dark-mode{
+    background-color: #333;
+    color: #fff;
+}
+
+.arrow.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+.arrow:hover.dark-mode {
+    color: #a36464;
+  }
+
+.container.dark-mode{
+    background-color: #666;
+}
+
+header.dark-mode {
+    background-color: #a36464;
+    color: #fff;
+}
+
+th.dark-mode {
+    background-color: #a36464;
+    color: #fff;
+}
