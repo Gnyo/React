@@ -35,3 +35,6 @@
 ③ <a href="https://github.com/Gnyo/React/tree/main/0412/%EA%B3%BC%EC%A0%9C/intro/jsxCode"> 자기소개 jsx 및 css 파일 Download </a></br>
 ④ <a href="https://gnyo.github.io/React/0412/%EA%B3%BC%EC%A0%9C/signup/build/"> 회원가입 React Web </a></br>
 ⑤ <a href="https://github.com/Gnyo/React/tree/main/0412/%EA%B3%BC%EC%A0%9C/signup/jsxCode"> 회원가입 jsx 및 css 파일 Download </a></br>
+
+#### 0419
+① <a href="https://github.com/Gnyo/React/blob/main/0419/readme.md"> 강의 정리 </a></br>
