@@ -276,7 +276,7 @@ npm start
 - React Component도 마찬가지로 생명주기가 있음
 - 즉, Component가 생성되는 시점과 사라지는 시점이 정해짐
 
-![image-23](https://github.com/Gnyo/React/assets/102850495/91791b3c-a920-4fa2-b1b2-f7dc7978c33e)
-![image-24](https://github.com/Gnyo/React/assets/102850495/612925c4-2744-4db3-a72c-2aa2e3f3e9bf)
 
 ---
+
+### 스톱워치 만들기
