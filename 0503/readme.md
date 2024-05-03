@@ -1,3 +1,413 @@
+# Web Programming 07
+### useReducer 실습
+
+- Counter.js 파일을 생성하여 아래의 코드 입력
+```
+import React, { useState } from "react";
+
+const Counter = ({ initialCount }) => {
+    const initial = initialCount ? initialCount : 0;
+    const [count, setCount] = useState(initial);
+    const onIncrease = () => {
+        setCount((count) => count + 1);
+    };
+    const onDecrease = () => {
+        setCount((count) => count - 1);
+    };
+    return (
+        <>
+        <h2>Count: {count}</h2>
+        <button onClick={() => setCount(initial)}>초기화</button>
+        <button onClick={onIncrease}>증가</button>
+        <button onClick={onDecrease}>감소</button>
+        </>
+    );
+};
+export default Counter;
+```
+
+- App.js에 아래의 코드 입력
+```
+import React, { useState } from "react";
+import Counter from "./Counter";
+
+const App = () => {
+  return (
+    <div>
+      <Counter />
+    </div>
+  );
+};
+export default App;
+```
+
+- 결과
+
+![alt text](image-8.png)|![alt text](image-9.png)|![alt text](image-10.png)|![alt text](image-11.png)
+---|---|---|---|
+기본 상태|증가를 두 번 누른 상태|감소를 한 번 누른 상태|초기화를 누른 상태
+
+
+### useContext 실습
+
+- Header.js 파일을 생성하여 아래의 코드 입력
+```
+import { useContext } from "react";
+import { ThemeContext } from "./ThemeContext";
+
+const Header = () => {
+    const { isDark } = useContext(ThemeContext);
+    return (
+        <header
+        className="header"
+        style={{
+            backgroundColor: isDark ? "black" : "lightgray",
+            color: isDark ? "white" : "black",
+        }}
+        >
+        <h1>Welcome 홍길동!</h1>
+        </header>
+    );
+};
+export default Header;
+```
+
+- Content.js 파일을 생성하여 아래의 코드 입력
+```
+import React, { useContext } from "react";
+import { ThemeContext } from "./ThemeContext";
+
+const Content = () => {
+    const { isDark } = useContext(ThemeContext);
+    return (
+        <div
+        className="content"
+        style={{
+            backgroundColor: isDark ? "black" : "white",
+            color: isDark ? "white" : "black",
+        }}
+        >
+        <p>홍길동님, 좋은 하루 되세요 </p>
+        </div>
+    );
+};
+export default Content;
+```
+
+- Footer.js 파일을 생성하여 아래의 코드 입력
+```
+import React, { useContext } from "react";
+import { ThemeContext } from "./ThemeContext";
+
+const Footer = () => {
+    const { isDark, setIsDark } = useContext(ThemeContext);
+    const toggleTheme = () => {
+        setIsDark(!isDark);
+    };
+    return (
+        <footer
+        className="footer"
+        style={{ backgroundColor: isDark ? "black" : "lightgray" }}
+        >
+        <button className="button" onClick={toggleTheme}>
+            Dark Mode
+        </button>
+        </footer>
+    );
+};
+export default Footer;
+```
+
+- Page.js 파일을 생성하여 아래의 코드 입력
+```
+import React from "react";
+import Content from "./Content";
+import Header from "./Header";
+import Footer from "./Footer";
+
+const Page = () => {
+    return (
+        <div className="page">
+        <Header />
+        <Content />
+        <Footer />
+        </div>
+    );
+};
+export default Page;
+```
+
+- ThemeContext.js 파일을 생성하여 아래의 코드 입력
+```
+import { createContext } from "react";
+export const ThemeContext = createContext(null);
+```
+
+- App.js 파일에 아래의 코드 입력
+```
+import { useState } from "react";
+import "./App.css";
+import Page from "./Page";
+import { ThemeContext } from "./ThemeContext";
+
+function App() {
+  const [isDark, setIsDark] = useState(false);
+  return (
+    <ThemeContext.Provider value={{ isDark, setIsDark }}>
+      <Page />
+    </ThemeContext.Provider>
+  );
+}
+export default App;
+```
+
+- 결과
+
+![alt text](image-12.png) | ![alt text](image-13.png)
+---|---|
+기본 상태 | Dark Mode 버튼을 누른 상태
+
+
+### useRef 실습
+
+- InputSample.js 파일을 생성하여 아래의 코드 입력
+```
+import React, { useState, useRef } from "react";
+
+const InputSample = () => {
+    const [inputs, setInputs] = useState({
+        이름: "",
+        nickname: "",
+    });
+    const nameFocus = useRef();
+    const { 이름, nickname } = inputs;
+    const onChange = (e) => {
+        const { value, name } = e.target;
+        setInputs({
+        ...inputs,
+        [name]: value,
+        });
+    };
+    const onReset = () => {
+        setInputs({
+        이름: "",
+        nickname: "",
+        });
+        nameFocus.current.focus();
+    };
+    return (
+        <div>
+        <input
+            name="이름"
+            placeholder="이름쓰세요"
+            onChange={onChange}
+            value={이름}
+            ref={nameFocus}
+        />
+        <input
+            name="nickname"
+            placeholder="닉네임쓰세요"
+            onChange={onChange}
+            value={nickname}
+        />
+        <button onClick={onReset}>초기화</button>
+        <div>
+            <b>값:</b>
+            {이름}({nickname})
+        </div>
+        </div>
+    );
+};
+export default InputSample;
+```
+
+- App.js 파일에 아래의 코드 입력
+```
+import React, { useState } from "react";
+import InputSample from "./InputSample";
+
+const App = () => {
+  return (
+    <div>
+      <InputSample />
+    </div>
+  );
+};
+export default App;
+```
+
+- 결과
+
+![alt text](image-14.png) | ![alt text](image-15.png)
+---| ---|
+기본 상태(초기화 상태) | 값(이름, 닉네임)을 넣은 상태
+
+### forwardRef 실습
+
+- Form.js 파일을 생성하여 아래의 코드 입력
+```
+import { useRef } from "react";
+import { forwardRef } from "react";
+
+const MyInput = forwardRef(function MyInput(props, ref) {
+    const { label, ...otherProps } = props;
+    return (
+        <label>
+        {label}
+        <input {...otherProps} ref={ref} />
+        </label>
+    );
+});
+
+function Form() {
+    const ref = useRef(null);
+    function handleClick() {
+        ref.current.focus();
+    }
+    return (
+        <form>
+        <MyInput label="Enter your name:" ref={ref} />
+        <button type="button" onClick={handleClick}>
+            Edit
+        </button>
+        </form>
+    );
+}
+
+export default Form;
+```
+
+- App.js 파일에 아래의 코드 입력
+```
+import React, { useState } from "react";
+import Form from "./Form";
+
+const App = () => {
+  return (
+    <div>
+      <Form />
+    </div>
+  );
+};
+export default App;
+```
+
+- 결과
+
+![alt text](image-16.png) | ![alt text](image-17.png)
+---| ---|
+기본 상태 | 편집한 상태
+
+
+### useImperativeHandle 실습
+
+- MyInput.js 파일을 생성하여 아래의 코드 입력
+```
+import { useRef, useImperativeHandle } from 'react';
+
+function MyInput(props, ref) {
+    const inputRef = useRef(null);
+    useImperativeHandle(
+        ref,
+        () => {
+        return {
+            focus() {
+            inputRef.current.focus();
+            },
+        };
+        },
+        []
+    );
+    return <input type="text" ref={inputRef} />;
+}
+export default MyInput;
+```
+
+- InputForm.js 파일을 생성하여 아래의 코드 입력
+```
+import { useRef,forwardRef } from 'react';
+import MyInput from './MyInput';
+const ForwardedMyInput = forwardRef(MyInput);
+function InputForm() {
+    const ref = useRef(null);
+    function handleClick() {
+        ref.current.focus();
+    }
+    return (
+        <form>
+        <ForwardedMyInput ref={ref} />
+        <button type="button" onClick={handleClick}>
+            Edit
+        </button>
+        </form>
+    );
+}
+export default InputForm;
+```
+
+- 결과
+
+![alt text](image-18.png) | ![alt text](image-19.png)
+---| ---|
+기본 상태 | 편집한 상태
+
+
+### useEffect
+
+- UseEffectTest.js 파일을 생성하여 아래의 코드 입력
+```
+import { useEffect, useState } from "react";
+
+export default function UseEffectTest() {
+    const [count, setCount] = useState(1000);
+
+    useEffect(() => {
+        console.log("useEffect");
+        const interval = setInterval(() => console.log(count), count);
+        return () => {
+        clearInterval(interval);
+        console.log("clearInterval");
+        };
+    }, [count]);
+    const countHandler = (e) => {
+        setCount((c) => c + 1000);
+    };
+
+    return (
+        <div className="App">
+        <h1>{count}</h1>
+        <button onClick={countHandler}>카운트 증가</button>
+        </div>
+    );
+}
+```
+
+- App.js 파일에 아래의 코드 입력
+```
+import React, { useState } from "react";
+import UseEffectTest from "./UseEffectTest";
+
+const App = () => {
+  return (
+    <div>
+      <UseEffectTest />
+    </div>
+  );
+};
+export default App;
+```
+
+- 결과
+
+![alt text](image-20.png) | ![alt text](image-21.png) | ![alt text](image-22.png)
+---| ---| ---|
+기본 상태 | 카운트 증가 버튼을 한 번 누른 상태 | 카운트 증가 버튼을 네 번 누른 상태
+
+---
+---
+---
+
+# Web Programming 07-1
 ### useMemo 실습
 
 - Practice.js 파일을 생성하여 아래의 코드 입력
@@ -203,7 +613,7 @@ function PasswordField() {
       </p>
     </>
   );
-}ㄴ
+}
 export default PasswordField;
 ```
 
