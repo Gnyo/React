@@ -43,7 +43,7 @@ export default App;
 
 - 결과
 
-![alt text](image-8.png)|![alt text](image-9.png)|![alt text](image-10.png)|![alt text](image-11.png)
+![image-8](https://github.com/Gnyo/React/assets/102850495/fc466d3e-c836-42d4-ba3c-ba19211ebdb7)|![image-9](https://github.com/Gnyo/React/assets/102850495/7a86cabc-fe63-424f-89d7-368a443f0912)|![image-10](https://github.com/Gnyo/React/assets/102850495/e66ec908-4df4-4683-803a-c1c22f8b1054)|![image-11](https://github.com/Gnyo/React/assets/102850495/add95816-260d-43e2-8dd4-6ea916614226)
 ---|---|---|---|
 기본 상태|증가를 두 번 누른 상태|감소를 한 번 누른 상태|초기화를 누른 상태
 
@@ -163,7 +163,7 @@ export default App;
 
 - 결과
 
-![alt text](image-12.png) | ![alt text](image-13.png)
+![image-12](https://github.com/Gnyo/React/assets/102850495/c401ec57-be6d-48f5-bb77-eb3080125f01) | ![image-13](https://github.com/Gnyo/React/assets/102850495/6ce07ba9-d852-484a-b2bd-c0db0ac2f319)
 ---|---|
 기본 상태 | Dark Mode 버튼을 누른 상태
 
@@ -238,7 +238,7 @@ export default App;
 
 - 결과
 
-![alt text](image-14.png) | ![alt text](image-15.png)
+![image-14](https://github.com/Gnyo/React/assets/102850495/ce87a27a-a884-4a1b-a5e7-6813950ac35d) | ![image-15](https://github.com/Gnyo/React/assets/102850495/f0e84c1e-c401-47db-bb65-f4b6abd3f3a4)
 ---| ---|
 기본 상태(초기화 상태) | 값(이름, 닉네임)을 넣은 상태
 
@@ -294,7 +294,7 @@ export default App;
 
 - 결과
 
-![alt text](image-16.png) | ![alt text](image-17.png)
+![image-16](https://github.com/Gnyo/React/assets/102850495/5a26f924-1e4b-4d8d-adef-b6b1b09ace0f) | ![image-17](https://github.com/Gnyo/React/assets/102850495/00d078b7-0df8-4f17-9dc7-5a18d3582a7a)
 ---| ---|
 기본 상태 | 편집한 상태
 
@@ -347,7 +347,7 @@ export default InputForm;
 
 - 결과
 
-![alt text](image-18.png) | ![alt text](image-19.png)
+![image-18](https://github.com/Gnyo/React/assets/102850495/254b38c5-bfff-45c7-92ed-0fa97fcc3542) | ![image-19](https://github.com/Gnyo/React/assets/102850495/295d7eae-31aa-4bf3-b822-985416125857)
 ---| ---|
 기본 상태 | 편집한 상태
 
@@ -399,12 +399,10 @@ export default App;
 
 - 결과
 
-![alt text](image-20.png) | ![alt text](image-21.png) | ![alt text](image-22.png)
+![image-20](https://github.com/Gnyo/React/assets/102850495/c062c91e-96bc-47f2-8c27-9da9c1e960f0) | ![image-21](https://github.com/Gnyo/React/assets/102850495/2b426d00-232b-4af5-a5a7-d50b8266a3d5) | ![image-22](https://github.com/Gnyo/React/assets/102850495/14553786-baee-4a6c-8bdf-148834b5bed2)
 ---| ---| ---|
 기본 상태 | 카운트 증가 버튼을 한 번 누른 상태 | 카운트 증가 버튼을 네 번 누른 상태
 
----
----
 ---
 
 # Web Programming 07-1
@@ -471,7 +469,7 @@ export default App;
 
 - 결과
 
-![alt text](image-2.png)
+![image-2](https://github.com/Gnyo/React/assets/102850495/e410a2c5-4691-41df-9e5a-e4bb83a809c2)
 
 
 ### useCallback 실습
@@ -539,7 +537,7 @@ export default SmartHome;
 
 - 결과 
 
-![alt text](image.png) | ![alt text](image-1.png)
+![image](https://github.com/Gnyo/React/assets/102850495/31ebe2eb-a819-47de-b33b-576bc2fd8963) | ![image-1](https://github.com/Gnyo/React/assets/102850495/4d493929-be74-4103-8db0-05aeef32af68)
 ---|---|
 꺼진 상태 | on된 상태
 
@@ -589,7 +587,7 @@ export default App;
 
 - 결과
 
-![alt text](image-3.png) | ![alt text](image-4.png) | ![alt text](image-5.png)
+![image-3](https://github.com/Gnyo/React/assets/102850495/6379ee72-c0a2-45d5-b12b-36ba631671c0) | ![image-4](https://github.com/Gnyo/React/assets/102850495/d3e80622-6ea2-4b7f-9519-c9eae0fb9866) | ![image-5](https://github.com/Gnyo/React/assets/102850495/20c8b6d0-f08b-4af6-a8b3-c25f84e761c3)
 ---| ---| ---|
 기본 상태 | 버튼을 한 번 누른 상태 | 버튼을 두 번 누른 상태
 
@@ -634,7 +632,7 @@ export default App;
 
 -결과
 
-![alt text](image-6.png) | ![alt text](image-7.png)
+![image-6](https://github.com/Gnyo/React/assets/102850495/823fae9f-f15d-4dff-b1fd-fa738221ba76) | ![image-7](https://github.com/Gnyo/React/assets/102850495/a0ae1862-3212-4f66-9c13-24dd0bf3e6df)
 ---| ---|
 기본 상태 | 패스워드(비밀번호)를 입력한 상태
 
