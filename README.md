@@ -23,7 +23,7 @@
 ③ <a href="https://gnyo.github.io/React/0329/과제/introduce.html"> 자기소개 HTML Web </a></br>
 ④ <a href="https://gnyo.github.io/React/0329/과제/introduce.html"> 자기소개 JavaScript Web </a></br>
 ⑤ <a href="https://gnyo.github.io/React/0329/과제/build/introduce.html"> 자기소개 React Web </a></br>
-⑥ <a href="https://github.com/Gnyo/React/blob/main/0329/%EA%B3%BC%EC%A0%9C/HomeWork.fig"> 프로젝트 기획 figma 파일 Download </a></br>
+⑥ <a href="https://github.com/Gnyo/React/blob/main/0329/%EA%B3%BC%EC%A0%9C/HomeWork.fig"> 포트폴리오 웹사이트 기획 figma 파일 Download </a></br>
 
 #### 0405
 ① <a href="https://github.com/Gnyo/React/blob/main/0405/readme.md"> 강의 정리 </a></br>
@@ -46,3 +46,4 @@
 #### 0503
 ① <a href="https://github.com/Gnyo/React/blob/main/0503/readme.md"> 실습 정리 </a></br>
 ② <a href="https://github.com/Gnyo/React/tree/main/0503/%EC%8B%A4%EC%8A%B5"> 실습 소스코드 </a></br>
+③ <a href="https://www.figma.com/file/zEm4PC281Mmi0dII5Hf1D0/Puppy-Load?type=design&node-id=0%3A1&mode=design&t=0AvPN7RgnOw8qvMP-1"> 댕로 웹사이트 기획 figma 파일 URL </a>
