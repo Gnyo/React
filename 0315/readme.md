@@ -24,7 +24,7 @@
 ---
 
 ### DOM(Document Object Model)
-#### HTML DOM(간단히 DOM)
+#### HTML DOM
 - 웹 페이지에 작성된 HTML 태그 당 객체(DOM 객체) 생성: 모든 태그 당 객체 하나씩
 #### 목적
 - HTML 태그가 출력된 모양이나 콘텐츠를 제어하기 위해
@@ -34,18 +34,24 @@
 - HTML 태그의 포함 관계에 따라 DOM 객체의 트리(tree) 생성
 - DOM 트리는 부모 자식 관계
 #### DOM 객체
-- HTML 태그 당 하나의 DOM 객체 생성: DOM 노드(Node), DOM 엘리먼트(Element)라고도 불림</br></br>
-![image](https://github.com/Gnyo/React/assets/102850495/31907f22-19f0-4bf8-822f-686ccabd4c44)</br>
-    BOM(Browser Object Model): 이미 객체가 만들어져 있음</br>
-    DOM(Document Object Model): html 코드 등으로 객체 만들어짐</br>
+- HTML 태그 당 하나의 DOM 객체 생성: DOM 노드(Node), DOM 엘리먼트(Element)라고도 불림</br>
+
+![image](https://github.com/Gnyo/React/assets/102850495/31907f22-19f0-4bf8-822f-686ccabd4c44)
+---|
+
+- BOM(Browser Object Model): 이미 객체가 만들어져 있음</br>
+- DOM(Document Object Model): html 코드 등으로 객체 만들어짐</br>
+
 ### Rendering
 - 실시간으로 웹사이트가 그려지는 과정</br>
-![image](https://github.com/Gnyo/React/assets/102850495/d29600ed-e2e9-4cbd-ac52-17b14d2ae39c)</br>
-    ① HTML을 파싱하여 DOM 트리를 만든다.</br>
-    ② CSS를 파싱하여 CSSOM 트리를 만든다.</br>
-    ③ DOM과 CSSOM을 결합하여 렌더링 트리를 만든다.</br>
-    ④ 렌더링 트리에서 각 노드의 크기와 위치를 계산한다.</br>
-    ⑤ 개별 노드를 화면에 그린다.</br>
+
+![image](https://github.com/Gnyo/React/assets/102850495/d29600ed-e2e9-4cbd-ac52-17b14d2ae39c)
+---| 
+① HTML을 파싱하여 DOM 트리를 만든다.
+② CSS를 파싱하여 CSSOM 트리를 만든다.
+③ DOM과 CSSOM을 결합하여 렌더링 트리를 만든다.
+④ 렌더링 트리에서 각 노드의 크기와 위치를 계산한다.
+⑤ 개별 노드를 화면에 그린다.
 
 ---
 
@@ -59,8 +65,10 @@
 - 장점:</br>
 FE와 BE가 확실히 구분되어 백엔드 부분에 걱정할 필요가 없음(개발 순서로 디자인→서버가 가능)
 - 단점:</br>
-최초 로딩 시 한번에 받아와 초기 ㅔ이지 로딩시간이 긺
+최초 로딩 시 한번에 받아와 초기 페이지 로딩시간이 긺
+
 ![image](https://github.com/Gnyo/React/assets/102850495/1fe7278b-8692-499c-8a69-a4a9a2778b6c)
+---| 
 
 
 ### MPA(Multi Page Application)
@@ -73,7 +81,9 @@ FE와 BE가 확실히 구분되어 백엔드 부분에 걱정할 필요가 없�
 서버에서 미리 렌더링을 하고 가져와 첫 로딩이 매우 짧음
 - 단점:</br>
 새로운 페이지를 이동하면 '깜빡'임(UX)
+
 ![image](https://github.com/Gnyo/React/assets/102850495/ae861cd2-5280-4a22-b0f6-3d8600eb4967)
+---| 
 
 ---
 
@@ -83,4 +93,6 @@ FE와 BE가 확실히 구분되어 백엔드 부분에 걱정할 필요가 없�
 
 ### Server
 - 특성 서비스를 제공하는 자
+
 ![image](https://github.com/Gnyo/React/assets/102850495/7fed13d7-e048-430a-bfd4-eb760da6e0cf)
+---| 
