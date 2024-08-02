@@ -25,10 +25,15 @@ DOM은 자바스크립트를 이용하여 코드를 DOM tree로 변경 가능</b
 
 - 기존 DOM은 이벤트가 발생할 때(변경이 있을 때)마다 렌더트리를 재생성하고 다시 구축
 - 브라우저의 연산의 양이 많아 전체적인 프로세스를 비효율적으로 만듦
+
 ![image](https://github.com/Gnyo/React/assets/102850495/7209b25e-5d04-4675-a4a5-cb90728c8711)
+---|
+
 - 뷰(HTML)에 변화가 있을 떄, 구 가상돔(Old Node)과 새 가상돔(New Node)을 비교하여 변경된 내용만 DOM에 적용
 - 브라우저 내에서 발생하는 연산의 양(렌더링 과정) 감소로 성능 개선
+
 ![image](https://github.com/Gnyo/React/assets/102850495/90edd4ba-d12d-4d2c-b0cd-bf6d4f8ca1e3)
+---|
 
 ---
 ### React
@@ -56,7 +61,9 @@ DOM은 자바스크립트를 이용하여 코드를 DOM tree로 변경 가능</b
 - 모듈: 특정 기능을 갖는 작은 코드 단위로 모듈, 프로시저, 함수, 매크로 등의 이름으로 불림
 - 번들링: js, css, png 등 각각의 파일을 모두 모듈로 보고 이 모듈을 배포용으로 하나의 파일로 통합시켜주는 작업
 - 예를 들어 npm run build시에 build 폴더 만듦
+
 ![image](https://github.com/Gnyo/React/assets/102850495/87984ff0-2bc2-4efc-a3c0-2e12029d763b)
+---|
 
 
 #### App.js
@@ -68,7 +75,23 @@ DOM은 자바스크립트를 이용하여 코드를 DOM tree로 변경 가능</b
 #### index.html
 - index.js에 대응되는 HTML 템플릿 파일
 - 렌더링된 결과 표시(index.html 이름 변경 시 오류 발생)
+  
 ![image](https://github.com/Gnyo/React/assets/102850495/c1bf8adf-ba24-458a-986b-6e81740d6d39)
-![image](https://github.com/Gnyo/React/assets/102850495/6278ab97-9066-4d2e-ac7e-2a21b7b79d31)
+---|
+
+---
+### 실습
+
+#### react-app 생성
+- vsCode의 터미널에 접속 ([ctrl] + [`])
+```
+  npx create-react-app [프로젝트명]
+```
+- [프로젝트명]의 리액트 프로젝트가 생성됨
+- 프로젝트명은 영어 소문자로만 생성 가능
+
+![image](https://github.com/user-attachments/assets/0c2b952d-b52c-4e2f-b014-18e9ad135a6a)
+---|
+
 
 
