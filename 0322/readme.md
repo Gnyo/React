@@ -83,15 +83,44 @@ DOM은 자바스크립트를 이용하여 코드를 DOM tree로 변경 가능</b
 ### 실습
 
 #### react-app 생성
-- vsCode의 터미널에 접속 ([ctrl] + [`])
+- vsCode의 터미널에 접속 (ctrl + `) 후 아래의 명령어 입력 시, [프로젝트명]의 리액트 프로젝트가 생성됨
 ```
   npx create-react-app [프로젝트명]
 ```
-- [프로젝트명]의 리액트 프로젝트가 생성됨
-- 프로젝트명은 영어 소문자로만 생성 가능
+> ① 공백 없음: 프로젝트 이름에는 공백이 포함되어서는 안 됩니다. 공백 대신에 대시 (-)나 언더스코어 (_) 등을 사용할 수 있습니다. </br>
+> ② 특수 문자 제한: 일반적으로 특수 문자는 허용되지 않습니다. 오직 알파벳 문자, 숫자, 대시, 언더스코어만을 사용해야 합니다. </br>
+> ③ 숫자로 시작하지 않음: 프로젝트 이름은 숫자로 시작할 수 없습니다. </br>
+> ④ NPM 규칙 준수: 프로젝트 이름은 NPM 규칙을 따라야 합니다. NPM 규칙에 따르면 소문자만 사용하고, 단일 단어가 아닌 경우에는 대시나 언더스코어를 사용하여 단어를 구분합니다. </br>
+
+#### react-app 실행
+- vsCode의 터미널에 접속 (ctrl + `) 후, 아래의 명령어 입력 시, 리액트 프로젝트가 실행됨
+```
+  npm start
+```
+
+![image](https://github.com/user-attachments/assets/07497b2a-2f6d-4acf-9f2b-25cd06fc6906)
+---| 
+  localhost:3000에서 실행됨
+  해당 포트를 그만 사용하고 싶으면 터미널에서 (ctrl + c)로 작업 끝내기
+
+#### react-app 수정
+- App.js의 'Learn React' 부분을 수정하면 링크 부분이 변경됨
+
+수정 전 | 수정 후
+---|---
+![image](https://github.com/user-attachments/assets/730c38e4-e79d-4e0b-865c-bf6b22806b7d) | ![image](https://github.com/user-attachments/assets/6a97dd92-cb9e-4c2e-9b85-ecc014b1bceb)
+![image](https://github.com/user-attachments/assets/90ad58c5-8112-428d-8668-0a1b5d1c8e7b) | ![image](https://github.com/user-attachments/assets/6f98bcf9-316b-450a-80ae-5fae6cd46ad1)
+
+#### react-app 빌드(build)
+- vsCode의 터미널에 접속 (ctrl + `) 후, 아래의 명령어 입력 시, 리액트 프로젝트가 빌드됨
+```
+  npm run build
+```
+> 빌드(build): 소스 코드 파일을 실행 가능한 소프트웨어 산출물로 변환하는 과정 </br> 
+> 리액트 프로젝트를 빌드한 후 아래와 같이 배포 가능
 
 ![image](https://github.com/user-attachments/assets/0c2b952d-b52c-4e2f-b014-18e9ad135a6a)
 ---|
-
+https://gnyo.github.io/React/0322/build/index.html
 
 
