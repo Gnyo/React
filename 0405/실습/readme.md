@@ -1,4 +1,4 @@
-# Web Programming 04
+# Web Programming 04-1
 
 ### 리스트 컴포넌트
 
@@ -99,7 +99,7 @@ npm start
 <br>
 
 
-### 댓글 컴포넌트 만들
+### 댓글 컴포넌트 만들기 
 
 1. 'Comment.js' 파일 생성 후 코드 입력
 ```
