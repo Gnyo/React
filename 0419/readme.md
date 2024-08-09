@@ -1,6 +1,6 @@
 # Web Programming 06
 
-## Hook
+> ## Hook
 
 ### 등장 배경
 - 리액트 컴포넌트는 함수형 컴포넌트/클래스형 컴포넌트로 나뉨
@@ -11,10 +11,14 @@
   + 최신 기술의 적용이 효과적이지 않음
 - 클래스형 컴포넌트의 단점을 보완하여 함수형 컴포넌트를 사용할 수 있도록 등장한 것이 React Hook(리액트 훅)
 
+</br>
+
 ### 장점
 - 상태 로직 단순화: 함수형 컴포넌트에 상태를 추가하여 전반적인 로직을 단순화하고 코드를 이해하기 쉽게 만들 수 있음
 - 코드 재사용성과 관심사 분리: 컴포넌트 계층 구조를 변경하지 않고도 여러 컴포넌트 간에 상태 로직을 재사용할 수 있음
 - 사이드 이펙트 감소: 함수형 컴포넌트에 생명주기 매소드와 유사한 기능을 제공하여 사이드 이펙트를 더 효율적으로 처리 가능
+
+</br>
 
 ### 규칙
   + 규칙들을 자동으로 강제하기 위한 linter 플러그인(Create React App에 기본적으로 포함되어 있음)을 제공
@@ -24,11 +28,19 @@
 - 오직 React 함수 내에서 Hook을 호출해야 함
   + JavaScript에서 호출하면 안됨
 
-## useState
+</br>
+
+---
+
+</br>
+
+> ## useState
 - 컴포넌트에 state variable를 추가할 수 있음
 ```
 const [state, setState] = useState(initialState)
 ```
+
+</br>
 
 ### useState(initalState) Reference
   + 상태 변수를 선언하려면 구성 요소의 최상위 수준에서 useState를 호출
@@ -56,6 +68,8 @@ function MyComponent() {
   + useState는 Hook이므로 컴포넌트 최상위 수준이나 자체 Hook에서만 호출 가능(루프, 조건 내에서는 X)
   + 필요한 경우 새 구성 요소를 추출하고 상태를 해당 구성 요소로 옮김
   + Strict 모드에서 React는 실수로 발생한 불순물을 찾는 데에 도움을 주기 위해 초기화 함수를 두 번 호출
+
+</br>
 
 ### Set functions like setSomething(nextState) Reference
   + useState에 의해 반환되는 set 함수는 상태를 다른 값으로 업데이트하고 리렌더링을 트리거할 수 있음
@@ -86,6 +100,12 @@ function handleClick() {
   + 렌더링 중 set 함수 호출은 현재 렌더링 구성 요소 내에서만 허용, React는 출력을 삭제하고 즉시 새 상태로 다시 렌더링을 시도(이전 렌더링의 정보를 저장 하는 데 사용 가능)
   + Strict 모드에서 React는 우발적인 불순물을 찾는데 도움을 주기 위해 업데이트 기능을 두 번 호출 함(프로덕션에는 영향을 주지 않음) 업데이터 함수가 순수하다면(있는 그대로) 동작에 영향을 주지 않아야 하고 호출 중 하나의 결과는 무시
 
+</br>
+
+---
+
+</br>
+
 ### Hook 사용법(Usage)
 - 구성요소에 상태 추가
   + useState 하나 이상의 상태 변수를 선언하려면 구성 요소의 최상위 수준에서 호출
@@ -108,12 +128,16 @@ function handleClic(){
   setName('Robin');
 }
 ```
-- 리액트는 다음 상태를 저장하고, 새 값으로 구성 요소를 다시 렌더링하고, UI를 업데이트 함함
+- 리액트는 다음 상태를 저장하고, 새 값으로 구성 요소를 다시 렌더링하고, UI를 업데이트 함
 ![image](https://github.com/Gnyo/React/assets/102850495/5cc39970-548a-4ad2-90b1-089a26de46f6)
+
+</br>
 
 ---
 
-## Basic useState 실습
+</br>
+
+> ## Basic useState 실습
 ### Counter(number)
 1. 터미널에서 'stateex' 리액트 파일 만들기
 ```
@@ -172,6 +196,7 @@ npm start
 ---| ---|
 버튼을 누르지 않은 상태 | 버튼을 3번 누른 상태
 
+</br>
 
 ### Text field(string)
 1. 'stateex' 리액트 파일의 'src'폴더에서 'MyInput.js' 파일 생성
@@ -229,6 +254,7 @@ npm start
 ---| ---| ---|
 아무것도 입력하지 않은 상태 | 입력을 한 상태 | Reset을 누른 상태
 
+</br>
 
 ### Checkbox(boolean)
 1. 'stateex' 리액트 파일의 'src'폴더에서 'Checkbox.js' 파일 생성
@@ -291,6 +317,7 @@ npm start
 ---| ---|
 체크박스를 선택한 상태(기본 상태) | 체크박스를 해제한 상태
 
+</br>
 
 ### Form(two variables)
 1. 'stateex' 리액트 파일의 'src'폴더에서 'Form.js' 파일 생성
