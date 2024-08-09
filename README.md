@@ -27,13 +27,13 @@
 
 #### 0405
 ① <a href="https://github.com/Gnyo/React/blob/main/0405/readme.md"> 강의 정리 </a></br>
-② <a href="https://github.com/Gnyo/React/blob/main/0405/실습"> 실습 소스코드 </a></br>
+② <a href="https://github.com/Gnyo/React/blob/main/0405/실습"> 실습 소스코드 및 실습 정리 </a></br>
 ③ <a href="https://gnyo.github.io/React/0405/과제/build/"> 자기소개 React Web - 컴포넌트로 구성 </a></br>
 ④ <a href="https://github.com/Gnyo/React/tree/main/0405/%EA%B3%BC%EC%A0%9C/Component_5"> 자기소개 jsx 파일 Download </a></br>
 
 #### 0412
 ① <a href="https://github.com/Gnyo/React/blob/main/0412/readme.md"> 강의 정리 </a></br>
-② <a href="https://github.com/Gnyo/React/blob/main/0412/실습"> 실습 소스코드 </a></br>
+② <a href="https://github.com/Gnyo/React/blob/main/0412/실습"> 실습 소스코드 및 실습 정리 </a></br>
 ③ <a href="https://gnyo.github.io/React/0412/%EA%B3%BC%EC%A0%9C/intro/build/"> 자기소개 React Web - state를 포함한 컴포넌트로 구성 </a></br>
 ④ <a href="https://github.com/Gnyo/React/tree/main/0412/%EA%B3%BC%EC%A0%9C/intro/jsxCode"> 자기소개 jsx 및 css 파일 Download </a></br>
 ⑤ <a href="https://gnyo.github.io/React/0412/%EA%B3%BC%EC%A0%9C/signup/build/"> 회원가입 React Web </a></br>
