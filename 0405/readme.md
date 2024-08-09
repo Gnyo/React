@@ -175,25 +175,28 @@ npm start
 </br>
 
 ### 프로퍼티의 자료형, 타입 정의
-- 프로퍼티의 자료형을 미리 선언 가능
-- React 엔진이 프로퍼티로 전달하는 값을 효율적으로 알 수 있고, 버그 예방에도 도움
-- React에서 제공하는 prop-types를 이용하여 각각의 자료형을 선언하면 됨
+
+프로퍼티의 자료형을 미리 선언 가능
+|:---|
+React 엔진이 프로퍼티로 전달하는 값을 효율적으로 알 수 있고, 버그 예방에도 도움
+React에서 제공하는 prop-types를 이용하여 각각의 자료형을 선언하면 됨
+
 </br>
 
 ### 프로퍼티의 기본값 설정
-- 컴포넌트에 props 기본값을 설정하고 싶은 경우 defaultProps를 설정하면 됨
 
 ![image](https://github.com/Gnyo/React/assets/102850495/aafbb268-bd9b-471c-8a3f-f13d15aa163a)
 ---|
+컴포넌트에 props 기본값을 설정하고 싶은 경우 defaultProps를 설정하면 됨
 ex) Main.js: name 프로퍼티가 없는 경우, '디폴트' 값을 사용하게 처리
 
 </br>
 
 ### 프로퍼티의 필수값 설정
-- 디폴트 설정을 하지 않은 경우 해당 프로퍼티를 필수 프로퍼티로 선언 가능
 
 ![image](https://github.com/Gnyo/React/assets/102850495/955dafd0-87fb-4865-ba84-6576e07403a8)
 ---|
+디폴트 설정을 하지 않은 경우 해당 프로퍼티를 필수 프로퍼티로 선언 가능
 ex) Main.js: isRequired를 통한 필수값 설정
 
 </br>
@@ -239,6 +242,8 @@ npx create-react-app textimg
 
 2. 아이콘 이미지 다운로드
 - https://www.iconfinder.com/ 해당 사이트에서 desktop, notebook, pad 이미지 다운로드</br>
+
+</br>
 
 3. public 폴더에 img 폴더를 만들어서 다운로드 받은 이미지 넣기</br>
 
