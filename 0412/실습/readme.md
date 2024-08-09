@@ -1,23 +1,6 @@
-# Web Programming 05
+# Web Programming 05-1
 
-## 이벤트 핸들링 실습
-
-### 컴포넌트에서 DOM 이벤트 사용
-- DOM이벤트 프로퍼티 사용해야 함
-- JSX 내에서 'on+이벤트명' 형태의 프로퍼티로 사용
-
-![image-14](https://github.com/Gnyo/React/assets/102850495/c9e7264d-03d2-4dcd-92cf-ce82f181cfa7) |
----|
-
-<br>
-
-### 리액트의 이벤트 문법
-- 소문자 대신 카멜 케이스(camelCase) 사용
-    - onClick = {changename} (x)
-    - onClick = {changeName} (o)
-- JSX를 사용하여 문자열이 아닌 함수로 이벤트 핸들러 전달
-    - onClick = "changeName()" (x)
-    - onClick = {changeName} (o)
+> ## 이벤트 핸들링 실습
 
 1. 'Main.js' 파일 생성 후 코드 입력
 ```
@@ -64,7 +47,7 @@ npm start
 
 <br>
 
-- 함수 직접 선언하여 사용 가능
+#### 함수 직접 선언하여 사용 가능
 
 1. 'Main.js' 파일 코드 수정
 ```
@@ -98,6 +81,10 @@ npm start
 <br>
 
 ### 경고창 띄우기
+
+![image-16](https://github.com/Gnyo/React/assets/102850495/e1813fcc-1846-4f01-bde5-2afa90de822d) | ![image-17](https://github.com/Gnyo/React/assets/102850495/712e6496-f996-4eca-9af8-1605dd3575c5)
+---| ---|
+
 1. 'warning.html' 파일 생성 후 코드 입력
 ```
 <!DOCTYPE html>
@@ -146,6 +133,9 @@ npm start
 <br>
 
 ### 클릭했을 때 클래스의 메소드 호출
+
+![image-18](https://github.com/Gnyo/React/assets/102850495/60be1399-5dfb-4c64-be73-2a4adc80c421) | ![image-19](https://github.com/Gnyo/React/assets/102850495/705a785c-e959-407f-bd32-b3e9fe7881aa)
+---| ---|
 
 1. 'warning.html' 파일 코드 수정
 ```
@@ -196,6 +186,9 @@ npm start
 <br>
 
 ### 체크박스 구현
+
+![image-20](https://github.com/Gnyo/React/assets/102850495/4151b392-fc3a-4d69-b0d3-9555c4172bb8) | ![image-21](https://github.com/Gnyo/React/assets/102850495/ac82729f-1560-42fb-bd06-5066d690f905) | ![image-22](https://github.com/Gnyo/React/assets/102850495/e5814333-61ac-4c04-bf3c-738aa8f5ac14)
+---| ---| ---|
 
 1. 'checkbox.html' 파일 생성 후 코드 입력
 ```
@@ -269,7 +262,9 @@ npm start
 
 ---
 
-## Component Life Cycle
+<br>
+
+> ## Component Life Cycle 실습
 
 ### 스톱워치 만들기
 1. 'Stopwatch.js' 파일 생성 후 코드 입력
