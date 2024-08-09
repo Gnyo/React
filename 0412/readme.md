@@ -1,5 +1,6 @@
 # Web Programming 05
 
+> ## State 
 ### 상태(state)
 - 랜더링 결과물에 영향을 주는 정보, 변수
 - const(값 변경X), let(값 변경O) 등으로 선언한 변수와 달리 값이 변하면 관련있는 컴포넌트들이 재렌더링되어 화면이 바뀜
@@ -132,7 +133,7 @@ this.setState( { 바꿀 스테이트값 기술 }, () => { 여기 콜백 함수 }
 
 </br>
 
-### 이벤트 핸들링
+> ## 이벤트 핸들링
 - 웹 페이지에서 사용자 상호작용(user interaction)과 관련된 동적인 기능을 구현하기 위해 사용되는 기술
 
 </br>
@@ -169,33 +170,7 @@ this.setState( { 바꿀 스테이트값 기술 }, () => { 여기 콜백 함수 }
 
 </br>
 
-### 이벤트 핸들링 실습
-Link: https://github.com/Gnyo/React/tree/main/0412/%EC%8B%A4%EC%8A%B5
-
-#### 경고창 띄우기
-
-![image-16](https://github.com/Gnyo/React/assets/102850495/e1813fcc-1846-4f01-bde5-2afa90de822d) | ![image-17](https://github.com/Gnyo/React/assets/102850495/712e6496-f996-4eca-9af8-1605dd3575c5)
----| ---|
-
-</br>
-
-#### 클릭했을 때 클래스의 메소드 호출
-
-![image-18](https://github.com/Gnyo/React/assets/102850495/60be1399-5dfb-4c64-be73-2a4adc80c421) | ![image-19](https://github.com/Gnyo/React/assets/102850495/705a785c-e959-407f-bd32-b3e9fe7881aa)
----| ---|
-
-</br>
-
-#### 체크박스 구현
-
-![image-20](https://github.com/Gnyo/React/assets/102850495/4151b392-fc3a-4d69-b0d3-9555c4172bb8) | ![image-21](https://github.com/Gnyo/React/assets/102850495/ac82729f-1560-42fb-bd06-5066d690f905) | ![image-22](https://github.com/Gnyo/React/assets/102850495/e5814333-61ac-4c04-bf3c-738aa8f5ac14)
----| ---| ---|
-
-</br>
-
----
-
-</br>
+> ## Component Life Cycle
 
 ### 생명주기(Life cycle)
 - 사람은 태어나서 인생을 살다가 나이가 들어 죽는 생명주기를 가짐
@@ -205,3 +180,11 @@ Link: https://github.com/Gnyo/React/tree/main/0412/%EC%8B%A4%EC%8A%B5
 ![image-23](https://github.com/Gnyo/React/assets/102850495/91791b3c-a920-4fa2-b1b2-f7dc7978c33e)
 ![image-24](https://github.com/Gnyo/React/assets/102850495/612925c4-2744-4db3-a72c-2aa2e3f3e9bf)
 
+</br>
+
+---
+
+</br>
+
+### 이벤트 핸들링 및 생명주기 실습
+Link: https://github.com/Gnyo/React/blob/main/0412/%EC%8B%A4%EC%8A%B5/readme.md
