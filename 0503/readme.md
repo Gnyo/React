@@ -1,5 +1,6 @@
 # Web Programming 07
-### useReducer 실습
+
+### useReducer
 
 - Counter.js 파일을 생성하여 아래의 코드 입력
 ```
@@ -47,8 +48,9 @@ export default App;
 ---|---|---|---|
 기본 상태|증가를 두 번 누른 상태|감소를 한 번 누른 상태|초기화를 누른 상태
 
+</br>
 
-### useContext 실습
+### useContext
 
 - Header.js 파일을 생성하여 아래의 코드 입력
 ```
@@ -167,8 +169,9 @@ export default App;
 ---|---|
 기본 상태 | Dark Mode 버튼을 누른 상태
 
+</br>
 
-### useRef 실습
+### useRef
 
 - InputSample.js 파일을 생성하여 아래의 코드 입력
 ```
@@ -242,7 +245,9 @@ export default App;
 ---| ---|
 기본 상태(초기화 상태) | 값(이름, 닉네임)을 넣은 상태
 
-### forwardRef 실습
+</br>
+
+### forwardRef
 
 - Form.js 파일을 생성하여 아래의 코드 입력
 ```
@@ -298,8 +303,9 @@ export default App;
 ---| ---|
 기본 상태 | 편집한 상태
 
+</br>
 
-### useImperativeHandle 실습
+### useImperativeHandle
 
 - MyInput.js 파일을 생성하여 아래의 코드 입력
 ```
@@ -351,6 +357,7 @@ export default InputForm;
 ---| ---|
 기본 상태 | 편집한 상태
 
+</br>
 
 ### useEffect
 
@@ -403,10 +410,14 @@ export default App;
 ---| ---| ---|
 기본 상태 | 카운트 증가 버튼을 한 번 누른 상태 | 카운트 증가 버튼을 네 번 누른 상태
 
+</br>
+
 ---
 
+</br>
+
 # Web Programming 07-1
-### useMemo 실습
+### useMemo
 
 - Practice.js 파일을 생성하여 아래의 코드 입력
 ```
@@ -471,8 +482,9 @@ export default App;
 
 ![image-2](https://github.com/Gnyo/React/assets/102850495/e410a2c5-4691-41df-9e5a-e4bb83a809c2)
 
+</br>
 
-### useCallback 실습
+### useCallback
 
 - App.js에서 아래의 코드 입력
 ```
@@ -541,8 +553,9 @@ export default SmartHome;
 ---|---|
 꺼진 상태 | on된 상태
 
+</br>
 
-### useTransition 실습
+### useTransition
 
 - Home.js 파일을 생성하여 아래의 코드 입력
 ```
@@ -591,8 +604,9 @@ export default App;
 ---| ---| ---|
 기본 상태 | 버튼을 한 번 누른 상태 | 버튼을 두 번 누른 상태
 
+</br>
 
-### useID 실습
+### useID 
 
 - PasswordField.js 파일 생성 후 아래 코드 입력
 ```
@@ -636,8 +650,13 @@ export default App;
 ---| ---|
 기본 상태 | 패스워드(비밀번호)를 입력한 상태
 
+</br>
 
-### Custom Hook
+---
+
+</br>
+
+> ## Custom Hook
 - Hook은 개발자가 직접 작성하여 새로운 Hook을 생성할 수도 있는데, 이를 Custom Hook이라고 함
 - 조건문, 반복문 등에서 호출될 수 없고 컴포넌트 최상단에서만 호출 가능
 - React 컴포넌트 함수 내에서만 호출 되어야 함
